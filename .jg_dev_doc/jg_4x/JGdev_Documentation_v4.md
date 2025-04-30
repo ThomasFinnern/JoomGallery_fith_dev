@@ -21,7 +21,7 @@ We are sorry for "some" ugly parts of the style. This results from the limitatio
 
 # Frontend user uplod / User Panel 
 
-Joom gallery supports two main views (menues) to support users to upload images, create catagories / galleries and edit the images ..
+Joom gallery supports two main views (menues) to support users to upload images, create categories / galleries and edit the images ..
 
 * User Upload
 * User Panel
@@ -31,16 +31,16 @@ Both views can be reached from each other and in the end all views are reachable
 ## User Upload
 
 This view directs to the upload page.  
-It is intended for user who concentrate more on Ä'lots of uploads' and les on 'adminstration' and adding properties. There are links to the user panel view and to catagories/galleries list and images list. 
+It is intended for user who concentrate more on 'lots of uploads' and less on 'adminstration' and adding properties. There are links to the user panel view and to categories/galleries list and images list. 
 
-For example: Sport club with a lot of events want to uplod a lot of images but may not need to care for each image description and ... 
+For example: Sport club with a lot of events want to upload a lot of images but may not need to care for each image description and ... 
 
 ## User panel 
 
 This view shows a general overview. It features the last uploaded images or last created categories/galleries. There a links to the upload view, categories list and images list .....
 It is intended for user who care about each uploaded image properties and want to order or exchange items a lot.
 
-For example: Foto/Art club Where users care about the order/conten of categories/galleries and may toy around with the settings ...
+For example: Photo/art club, wWhere users care about the order/content of categories/galleries and may toy around with the settings ...
 
 
 
@@ -91,11 +91,50 @@ The user needs a initial category/gallery to build on.
 
 ## User login
 
-The user needs to be logged in, own a catagory/gallery and is assigned to a user group with certain rights
+The user needs to be logged in, own a category/gallery and is assigned to a user group with certain rights
+
+
+## User login
+
+To be logged in the user needs a assigned catagory/gallery (is owner) and is assigned to a user group with certain rights
+
+### Create site menu for users
+
+According to the expected user type create menu item "User upload" or "User panel" or 
+both
+
+### Enable login module in the front view
+
+Path: Content -> site modules
+
+Here Loginform (Type login) exists or it must be created.
+Enable the Loginform.
+
+Recommendation: Restrict the appearance to the user... pages 
+Inside assign a position and select the pages it shall appear
+
+### Page texts that indicate that the upload cannot be displayed
+
+#### Not logged in
+
+![Not logged in](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/NotLoggedIn.en.png?raw=true  "Not logged in")
+
+#### Logged in but missing rights or root category/gallery is not existing
+
+![Logged in, no root gallery, no rights](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/loggedInNoGalleryNorights.en.png?raw=true "Logged in, no root gallery, no rights")
 
 
 
 
+
+
+### Settings menu "User upload"
+
+??? ToDo:
+
+### Settings menu "User panel"
+
+??? ToDo:
 
 
 
