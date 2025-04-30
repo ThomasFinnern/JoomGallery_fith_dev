@@ -111,7 +111,7 @@ Here Loginform (Type login) exists or it must be created.
 Enable the Loginform.
 
 Recommendation: Restrict the appearance to the user... pages 
-Inside assign a position and select the pages it shall appear
+Inside, assign a position and select the pages it shall appear
 
 ### Page texts that indicate that the upload cannot be displayed
 
@@ -121,7 +121,7 @@ Inside assign a position and select the pages it shall appear
 
 #### Logged in but missing rights or root category/gallery is not existing
 
-![Logged in, no root gallery, no rights](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/loggedInNoGalleryNorights.en.png?raw=true "Logged in, no root gallery, no rights")
+![Logged in, no root gallery, no rights](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/loggedInNoGalleryNoRights.en.png?raw=true "Logged in, no root gallery, no rights")
 
 
 
