@@ -1,3 +1,16 @@
+//.buildPHP/
+.buildPHP/*.log
+.buildPHP/*.*.log
+.buildPHP/Translations/.idea/
+
+.packages/
+.packages_zip/
+
+
+# org and temp files
+**/*.org.*
+**/*.tmp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
