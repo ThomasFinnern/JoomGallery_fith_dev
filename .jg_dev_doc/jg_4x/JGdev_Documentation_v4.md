@@ -58,8 +58,8 @@ For each new user do following
 ### 1) Create user group "JG user upload"
 
 Create a user group. Specify a suitable name. Standard is "JG user upload". Assign "manager" as parent. See following order after save. 
-
-![User group order](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/d48f878ac445ed786f4896f6fbb345826a4e2ca8/.jg_dev_doc/jg_4x/images/site.UserUpload/user.upload.group.order.en.png "User group order")
+					
+![User group order](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/user.upload.group.order.en.png?raw=true"  "User group order")
 
 ### 2) Permissions in global Joom gallery configuration
 
@@ -67,7 +67,7 @@ Attention: Please use the global and not local configuration.
 
 Path in Backend: System -> Global configuration -> JoomGallery. Here use tab "Permissions"
 
-![List of system permissions](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/d48f878ac445ed786f4896f6fbb345826a4e2ca8/.jg_dev_doc/jg_4x/images/site.UserUpload/system.permissions.en.png "List of system permissions")
+![List of system permissions](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/system.permissions.en.png?raw=true"  "List of system permissions")
 
 Assign properties in red/green like in the picture above
 
@@ -77,7 +77,7 @@ Path in Backend: Joom gallery control panel -> "Configuration sets" button -> li
 
 It will look like below
 
-![List of joom gallery permissions](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/d48f878ac445ed786f4896f6fbb345826a4e2ca8/.jg_dev_doc/jg_4x/images/site.UserUpload/jg.permissions.en.png "List of joom gallery permissions")
+![List of joom gallery permissions](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/jg.permissions.en.png?raw=true"  "List of joom gallery permissions")
 
 ### 3A) Create new user and assign new group 
 
