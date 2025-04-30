@@ -1,0 +1,35 @@
+
+# <center>Documentation parts for JoomGallery V4 by developers</center>
+## **<center>Descriptions of user interfaces of code additions (parts)</center>**
+
+## <center>Thomas Finnern</center>
+
+<center>Version 2025.04.30</center><br>
+
+This documentation is a work in progress and will be updated regularly. 
+It is the collection of all markdown files from github
+[Project documentation Repository](https://github.com/ThomasFinnern/JoomGallery_fith_dev/tree/main/.jg_dev_doc/jg_4x) 
+
+Actually it contains updated added to JommGallery 4 by Thomas Finnern
+ 
+There may be an updated version of this document. 
+We may update it once in a while on new features. 
+
+We are sorry for "some" ugly parts of the style. This results from the limitation of writing in fast "Markdown syntax".
+
+**Lets get started**
+
+!INCLUDE "site\userUpload\00.UserPanel.UserUpload.en.md"
+!INCLUDE "site\userUpload\01.SetupTheUser.en.md"
+!INCLUDE "site\userUpload\02.UserLogin.md"
+!INCLUDE "site\userUpload\03.UserUploadView.en.md"
+!INCLUDE "site\userUpload\04.UserPanelView.en.md"
+
+
+
+
+
+
+
+
+
