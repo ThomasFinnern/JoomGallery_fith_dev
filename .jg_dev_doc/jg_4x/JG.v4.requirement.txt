@@ -1,0 +1,9 @@
+
+https://www.joomgalleryfriends.net/en/documentation/requirements-for-installing-joomgallery-4.html
+
+PHP 8.1 or higher  (? lower than 8.3 ;-) ) 
+
+MySQL 8.0.13 or higher or
+Database MariaDB 10.4.0 or higher or
+PostgreSQL 12.0 or higher.
+
