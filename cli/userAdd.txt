@@ -1,0 +1,22 @@
+Usage:
+  user:add [options]
+
+Options:
+      --username[=USERNAME]    username
+      --name[=NAME]            full name of user
+      --password[=PASSWORD]    password
+      --email[=EMAIL]          email address
+      --usergroup[=USERGROUP]  usergroup (separate multiple groups with comma ",")
+  -h, --help                   Display the help information
+  -q, --quiet                  Flag indicating that all output should be silenced
+  -V, --version                Displays the application version
+      --ansi                   Force ANSI output
+      --no-ansi                Disable ANSI output
+  -n, --no-interaction         Flag to disable interacting with the user
+      --live-site[=LIVE-SITE]  The URL to your site, e.g. https://www.example.com
+  -v|vv|vvv, --verbose         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Help:
+  user:add will add a user
+  		
+  Usage: php joomla.php user:add
