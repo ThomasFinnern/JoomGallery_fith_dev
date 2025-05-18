@@ -1,1 +1,0 @@
-php cli/joomla.php list user
