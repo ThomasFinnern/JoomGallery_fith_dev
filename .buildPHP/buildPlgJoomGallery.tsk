@@ -1,0 +1,11 @@
+task:buildExtension
+/type=plugin
+/srcRoot="../../JoomGallery_fith\plugins\system\joomgallery"
+   // /isNoRecursion=true
+/buildDir="../../joomGallery_fith_dev/.packages"
+/name=joomgallery
+/extension=plg_joomgallery
+// joomgallery specific
+/isDoNotUpdateCreationDate=true
+/isCollectPluginsModule=true
+

@@ -1,0 +1,11 @@
+task:buildExtension
+/type=plugin
+/srcRoot="../../JoomGallery_fith\plugins\console\joomconsole"
+   // /isNoRecursion=true
+/buildDir="../../joomGallery_fith_dev/.packages"
+/name=joomconsole
+/extension=plg_joomconsole
+// joomgallery specific
+/isDoNotUpdateCreationDate=true
+/isCollectPluginsModule=true
+
