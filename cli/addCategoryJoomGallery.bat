@@ -2,4 +2,8 @@
 REM list joomgallery categories
 CLS
 
-php joomla.php joomgallery:categories:add
+ECHO.
+ECHO --- php joomla.php joomgallery:category:add ---------------------
+ECHO.
+
+php joomla.php joomgallery:category:add
