@@ -1,0 +1,40 @@
+joomgallery:isJGExists
+owner::isJGExists
+
+$command:images.tusupload
+$task === 'tusupload'
+1. Head
+
+joomgallery:isJGExists
+owner::isJGExists
+
+$task === 'tusupload'
+2. Post
+
+joomgallery:isJGExists
+owner::isJGExists
+
+$task === 'tusupload'
+3. patch
+
+joomgallery:isJGExists
+owner::isJGExists
+
+joomgallery:onContentPrepareForm
+joomgallery:setResult
+
+ImageModel:save
+Uploader:retrieveImage
+
+owner:onContentBeforeSave
+owner:isUserExist
+
+owner:onContentBeforeSave
+owner:onContentBeforeSave
+owner:onContentBeforeSave
+
+joomgallery:onContentBeforeSave
+
+
+
+

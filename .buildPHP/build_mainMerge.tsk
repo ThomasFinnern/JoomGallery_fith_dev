@@ -1,0 +1,11 @@
+task:buildExtension
+/type=component
+/srcRoot="../../JoomGallery_fith_merge_master_250718"
+   // /isNoRecursion=true
+/buildDir="../../joomGallery_fith_dev/.packages"
+/name=joomgallery
+/extension=com_joomgallery
+// joomgallery specific
+/isDoNotUpdateCreationDate=true
+/isCollectPluginsModule=true
+/prefixZipName=mainMerge
