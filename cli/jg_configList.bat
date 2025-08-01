@@ -1,5 +1,5 @@
 @ECHO OFF
-REM  list a joomgallery category
+REM  list a joomgallery config list
 REM %1 category id
 REM %2 line length restriction on output
 CLS
@@ -8,7 +8,7 @@ REM category id
 set cat_id=%1
 
 if "%~1"=="" (
-	set cat_id=2
+	set cat_id=20
 )
 
 REM line length restriction on output
