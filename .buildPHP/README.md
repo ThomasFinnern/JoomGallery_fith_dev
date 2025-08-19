@@ -1,22 +1,40 @@
 
 # '.buildPHP' folder:
 
-Python project to generate zip of project JoomGallery_fith_dev
-Resulting zip is created in parallel folder .packages
+Batches to call PHP code to generate zip of project (folder) JoomGallery_fith and other JoomGallery* branches
+Resulting zip is created in parallel folder **.packages**
 
-Needs python installed and Repository 'JoomGallery_fith_dev' and 'buildExtension' must be located in parallel folders.
+Uses 'buildExtension' php project in parallel folder to execute the tasks.  It can create joomla extensions like components, modules, plugins and (and packages). The entry point to the build task is src\buildExtensionCmd.php there
 
-In this folder '.buildPHP' are the base batch scripts which calls the hard working ones (python) in buildExtension folder.
+In this folder 'build*.bat' are the base batch scripts which tell the execution code what to to do by commandline options.
+It uses a configuration file (*.tsk) to assign all the needed variables
 
-The manifest file will be changed for actual date. Options to the batch tell which version number part shall be increased.
-Options for build.bat (windows) 
+For example 
+```"%ExePath%php.exe" buildExtensionCmd.php -f ../../joomGallery_fith_dev/.buildPHP/build.tsk %OptionFile%```
+
+The batches accept option -s, -s, -f, -r, -m which changes the version in the manifest file.
+
 	-d develop     No change in Version
 	-s step        Change version part 0.0.0.x
 	-f build_fix   Change version part 0.0.x´0
 	-r release     Change version part 0.x.0.0
 	-m major       Change version part x.0.0.0
 
-Resulting zip name follows schema: <projectname>.<version>_date.zip see
-joomgallery.4.0.1_20250429.zip
+In the task file are options like
+```/isDoNotUpdateCreationDate=true```      
 
+Above flag is needed when the the date of creation should not be changed which is usually the case
+
+### requirement
+
+Path to php.exe is given inside *.bat batch or must be in the standard path
+
+## Resulting zip filename
+
+Following flag defines a prefix inside the resulting filename. A prefix can be omitted.
+```/prefixZipName=raw```
+
+Resulting zip name follows schema: 
+```<projectname\>.<prefix>.<version>_<date>.zip```
+example: ```joomgallery.raw.4.0.1_20250429.zip```
 
