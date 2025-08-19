@@ -34,8 +34,8 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
-"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
 
 popd
 

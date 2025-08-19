@@ -2,7 +2,7 @@ task:alignAll_use_Lines
 /callerProjectId=JG
    // /srcRoot="./../../JoomGallery_fith"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site"
-/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery"
+/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator/com_joomgallery"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src/Controller"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src/Model"

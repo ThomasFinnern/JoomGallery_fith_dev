@@ -34,8 +34,8 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/alignAll_use_Lines_userPanel_admin_JG.tsk %1
-"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/alignAll_use_Lines_userPanel_admin_JG.tsk %1
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines_userPanel_admin_JG.tsk %1
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines_userPanel_admin_JG.tsk %1
 
 popd
 

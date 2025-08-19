@@ -1,0 +1,18 @@
+------------------------------------------
+--- fithFileNameList ---
+File list:
+- CategoriesController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- CategoryController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- CategoryformController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- DisplayController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- ImageController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- ImageformController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- ImagesController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- JoomBaseController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- RoutingTrait.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UsercategoriesController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UsercategoryController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UserimageController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UserimagesController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UserpanelController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller
+- UseruploadController.php :: e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller

@@ -1,6 +1,6 @@
 @ECHO OFF
 REM updateAll_fileHeaders.bat
-REM standard calling over doFileTasksCmd.phpREM
+REM standard calling over doFileTasksCmd.php updateAll_fileHeaders_userPanel_admin.tsk
 REM
 CLS
 
@@ -39,8 +39,8 @@ pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
 REM echo.
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/updateAll_fileHeaders_userPanel_admin.tsk %OptionFile%
-"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/updateAll_fileHeaders_userPanel_admin.tsk %OptionFile%
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_userPanel_admin.tsk %OptionFile%
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_userPanel_admin.tsk %OptionFile%
 
 popd
 

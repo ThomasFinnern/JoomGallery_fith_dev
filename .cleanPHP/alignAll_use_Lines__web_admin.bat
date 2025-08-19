@@ -1,8 +1,10 @@
 @ECHO OFF
-REM updateAll_fileHeaders.bat
-REM standard calling over doFileTasksCmd.php updateAll_fileHeaders_userPanel_site.tsk
+REM alignAll_use_Lines_userPanel_admin_JG.bat
 REM
 CLS
+
+ECHO PHP alignAll_use_LinesCmd.php alignAll_use_Lines__web_admin.tsk
+ECHO.
 
 REM Path for calling
 set ExePath=e:\wamp64\bin\php\php8.4.5\
@@ -19,7 +21,6 @@ if exist "%ExePath%php.exe" (
 
 "%ExePath%php.exe" --version
 
-ECHO.
 ECHO ----------------------------------------------
 ECHO.
 
@@ -27,20 +28,14 @@ REM more otions
 
 set OptionFile=
 
-REM if %1A==-dA (
-REM 	set OptionFile=-o options_version_tsk\build_develop.opt
-REM )
-
-
 ECHO ----------------------------------------------
 ECHO.
 
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-REM echo.
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_userPanel_site.tsk %OptionFile%
-"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_userPanel_site.tsk %OptionFile%
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines__web_admin.tsk %1
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines__web_admin.tsk %1
 
 popd
 
