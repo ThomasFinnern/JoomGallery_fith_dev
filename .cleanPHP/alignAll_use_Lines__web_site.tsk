@@ -1,9 +1,9 @@
 task:alignAll_use_Lines
 /callerProjectId=JG
    // /srcRoot="./../../JoomGallery_fith"
-   // /srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery"
+/srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery"
    // /srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src"
-/srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller"
+   // /srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Controller"
    // /srcRoot="e:\wamp64\www\joomgallery5x_dev\components\com_joomgallery/src/Model"
    
 	// /isNoRecursion=true

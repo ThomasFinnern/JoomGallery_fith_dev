@@ -1,5 +1,5 @@
 @ECHO OFF
-REM  list a joomgallery category
+REM  show a joomgallery category
 REM %1 category id
 REM %2 line length restriction on output
 CLS

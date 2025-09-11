@@ -13,7 +13,7 @@ task:fileNamesList
    // /srcRoot="./../../JoomGallery_fith_feature_user_upload_raw/site/com_joomgallery/src/Model"
    // /isNoRecursion=true
 /includeExt="php"
-   // excludeExt = "ini"
+   // excludeExt="ini"
 /isWriteListToFile=true
 /listFileName="./../../JoomGallery_fith_dev/.buildPHP/foundFileNamesList_userPanel_site.txt"
    // /excludeFolderList=excluded
