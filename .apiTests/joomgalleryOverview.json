@@ -1,7 +1,8 @@
 {
-    "errors": {
-        "code": 500,
-        "title": "Internal server error",
-        "detail": "Error: Call to undefined function Joomgallery\\Component\\Joomgallery\\Api\\View\\Joomgallery\\yyy() in E:\\wamp64\\www\\joomgallery5x_dev\\api\\components\\com_joomgallery\\src\\View\\Joomgallery\\JsonapiView.php:39\nStack trace:\n#0 E:\\wamp64\\www\\joomgallery5x_dev\\api\\components\\com_joomgallery\\src\\Controller\\JoomgalleryController.php(71): Joomgallery\\Component\\Joomgallery\\Api\\View\\Joomgallery\\JsonapiView->displayJGVersion()\n#1 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\MVC\\Controller\\BaseController.php(730): Joomgallery\\Component\\Joomgallery\\Api\\Controller\\JoomgalleryController->version()\n#2 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\Dispatcher\\ApiDispatcher.php(61): Joomla\\CMS\\MVC\\Controller\\BaseController->execute('version')\n#3 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\Component\\ComponentHelper.php(361): Joomla\\CMS\\Dispatcher\\ApiDispatcher->dispatch()\n#4 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\Application\\ApiApplication.php(433): Joomla\\CMS\\Component\\ComponentHelper::renderComponent('com_joomgallery')\n#5 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\Application\\ApiApplication.php(116): Joomla\\CMS\\Application\\ApiApplication->dispatch()\n#6 E:\\wamp64\\www\\joomgallery5x_dev\\libraries\\src\\Application\\CMSApplication.php(304): Joomla\\CMS\\Application\\ApiApplication->doExecute()\n#7 E:\\wamp64\\www\\joomgallery5x_dev\\api\\includes\\app.php(50): Joomla\\CMS\\Application\\CMSApplication->execute()\n#8 E:\\wamp64\\www\\joomgallery5x_dev\\api\\index.php(31): require_once('E:\\\\wamp64\\\\www\\\\j...')\n#9 {main}"
-    }
+    "errors": [
+        {
+            "title": "Resource not found",
+            "code": 404
+        }
+    ]
 }
