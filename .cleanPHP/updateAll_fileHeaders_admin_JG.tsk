@@ -8,7 +8,7 @@ task:updateAll_fileHeaders
 
    // /srcRoot="./../../JoomGallery_fith"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator"
-/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator/com_joomgallery"
+/srcRoot="./../../JoomGallery_fith/administrator/com_joomgallery"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator/com_joomgallery/src"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator/com_joomgallery/src/Controller"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/administrator/com_joomgallery/src/Model"
