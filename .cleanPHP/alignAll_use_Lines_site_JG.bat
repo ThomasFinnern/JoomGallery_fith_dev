@@ -1,9 +1,9 @@
 @ECHO OFF
-REM updateAll_fileHeaders.bat
+REM alignAll_use_Lines_userPanel_site_JG.bat
 REM
 CLS
 
-ECHO PHP updateAll_fileHeaders.php updateAll_fileHeaders_JG.tsk
+ECHO PHP alignAll_use_LinesCmd.php alignAll_use_Lines_userPanel_site_JG.tsk
 ECHO.
 
 REM Path for calling
@@ -34,8 +34,8 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
-"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_JG.tsk %OptionFile%
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines_site_JG.tsk %1
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/alignAll_use_Lines_site_JG.tsk %1
 
 popd
 
