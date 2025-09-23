@@ -1,0 +1,6 @@
+task:get
+/baseUrl="http://127.0.0.1/joomla5x/api/index.php"
+/apiPath="v1/joomgallery/images"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomla5x.txt"
+/responseFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getImages.json"
+

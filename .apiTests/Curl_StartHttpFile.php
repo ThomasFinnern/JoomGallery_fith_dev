@@ -161,7 +161,7 @@ print ('=== Http file ==================================' . PHP_EOL);
 
 print ('Http file: "' . $httpFile . '"' . PHP_EOL);
 
-//--- read file ----
+//--- read file ------------------------------------------
 
 $content = file_get_contents($httpFile);
 $lines = explode("\n", $content);
@@ -181,7 +181,7 @@ print ('--- lines:' . PHP_EOL);
 //GET  http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev/projects
 //Accept: application/vnd.api+json
 //Content-Type: application/json
-//X-Joomla-Token: "c2hhMjU
+//X-Joomla-Token: "c2hhMjU..."
 
 $isStartFound = false;
 foreach ($lines as $idx => $line) {

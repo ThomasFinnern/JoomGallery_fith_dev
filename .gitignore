@@ -6,6 +6,8 @@
 .packages/
 .packages_zip/
 
+.apiTests/curl_http_files/
+
 
 # org and temp files
 **/*.org.*
