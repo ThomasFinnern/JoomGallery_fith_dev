@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApi_HttpCallCmd.php -f .\jg_getConfigs_1.tsk %1
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApi_HttpCallCmd.php -f .\jg_getConfigs_1.tsk %1
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApi_HttpCallCmd.php -f .\jg_getConfig_1.tsk %1
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApi_HttpCallCmd.php -f .\jg_getConfig_1.tsk %1
 
 GOTO :EOF
 

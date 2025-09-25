@@ -1,0 +1,40 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/joomgallery/categories/3"
+    },
+    "data": {
+        "type": "categories",
+        "id": "3",
+        "attributes": {
+            "parent_id": 1,
+            "level": 1,
+            "lft": 3,
+            "rgt": 4,
+            "alias": "india",
+            "id": 3,
+            "asset_id": 434,
+            "asset_id_image": 435,
+            "path": "india",
+            "title": "india",
+            "description": "",
+            "hidden": 0,
+            "in_hidden": 0,
+            "password": "",
+            "exclude_toplist": 0,
+            "exclude_search": 0,
+            "thumbnail": 0,
+            "static_path": "",
+            "params": "{\"jg_showrating\":\"-1\",\"jg_showcomments\":\"-1\",\"jg_dynamic_watermark\":\"-1\",\"jg_download\":\"-1\",\"jg_downloadwithwatermark\":\"-1\"}",
+            "language": "*",
+            "created_time": "2025-09-16 08:02:26",
+            "created_by": 778,
+            "modified_time": "2025-09-16 08:02:26",
+            "modified_by": 778,
+            "checked_out": 0,
+            "checked_out_time": null,
+            "metadesc": "",
+            "metakey": "",
+            "robots": 0
+        }
+    }
+}

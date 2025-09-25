@@ -1,0 +1,43 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/joomgallery/images/5"
+    },
+    "data": {
+        "type": "images",
+        "id": "5",
+        "attributes": {
+            "id": 5,
+            "catid": 3,
+            "alias": "india-4",
+            "title": "india-4",
+            "description": "",
+            "author": "",
+            "date": "2023-12-23 11:07:16",
+            "imgmetadata": "{\"comment\":\"\",\"iptc\":\"\",\"exif\":\"\"}",
+            "published": 1,
+            "filename": "india-4_4_20250916_2084076103.jpg",
+            "filesystem": "local-images",
+            "hits": 0,
+            "downloads": 0,
+            "votes": 0,
+            "votesum": 0,
+            "approved": 1,
+            "useruploaded": 0,
+            "access": 1,
+            "hidden": 0,
+            "featured": 0,
+            "ordering": 5,
+            "params": "{\"jg_dynamic_watermark\":\"-1\"}",
+            "language": "*",
+            "created_time": "2025-09-16 08:03:44",
+            "created_by": 778,
+            "modified_time": "2025-09-16 08:03:44",
+            "modified_by": 778,
+            "checked_out": 0,
+            "checked_out_time": null,
+            "metadesc": "",
+            "metakey": "",
+            "robots": "0"
+        }
+    }
+}

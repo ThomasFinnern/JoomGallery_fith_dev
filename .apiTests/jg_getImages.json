@@ -1,0 +1,181 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/joomgallery/images"
+    },
+    "data": [
+        {
+            "type": "images",
+            "id": "1",
+            "attributes": {
+                "id": 1,
+                "catid": 3,
+                "alias": "india-2",
+                "title": "india-2",
+                "published": 1,
+                "filename": "india-2_2_20250916_1829142942.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:38",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:38",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "2",
+            "attributes": {
+                "id": 2,
+                "catid": 3,
+                "alias": "india-5",
+                "title": "india-5",
+                "published": 1,
+                "filename": "india-5_5_20250916_1660108965.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:40",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:40",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "3",
+            "attributes": {
+                "id": 3,
+                "catid": 3,
+                "alias": "india-1",
+                "title": "india-1",
+                "published": 1,
+                "filename": "india-1_1_20250916_1479624715.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:41",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:41",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "4",
+            "attributes": {
+                "id": 4,
+                "catid": 3,
+                "alias": "india-3",
+                "title": "india-3",
+                "published": 1,
+                "filename": "india-3_3_20250916_1637548783.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:43",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:43",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "5",
+            "attributes": {
+                "id": 5,
+                "catid": 3,
+                "alias": "india-4",
+                "title": "india-4",
+                "published": 1,
+                "filename": "india-4_4_20250916_2084076103.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:44",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:44",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "6",
+            "attributes": {
+                "id": 6,
+                "catid": 3,
+                "alias": "india-7",
+                "title": "india-7",
+                "published": 1,
+                "filename": "india-7_7_20250916_1627150978.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:46",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:46",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "7",
+            "attributes": {
+                "id": 7,
+                "catid": 3,
+                "alias": "india-6",
+                "title": "india-6",
+                "published": 1,
+                "filename": "india-6_6_20250916_1545813596.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:47",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:47",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "8",
+            "attributes": {
+                "id": 8,
+                "catid": 3,
+                "alias": "india-8",
+                "title": "india-8",
+                "published": 1,
+                "filename": "india-8_8_20250916_2097861699.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:49",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:49",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        },
+        {
+            "type": "images",
+            "id": "9",
+            "attributes": {
+                "id": 9,
+                "catid": 3,
+                "alias": "india-9",
+                "title": "india-9",
+                "published": 1,
+                "filename": "india-9_9_20250916_1482965638.jpg",
+                "filesystem": "local-images",
+                "created_time": "2025-09-16 08:03:52",
+                "created_by": "finnern",
+                "modified_time": "2025-09-16 08:03:52",
+                "modified_by": "finnern",
+                "checked_out": 0,
+                "checked_out_time": null
+            }
+        }
+    ],
+    "meta": {
+        "total-pages": 1
+    }
+}

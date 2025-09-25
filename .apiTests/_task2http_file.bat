@@ -24,7 +24,7 @@ REM --- source file and folder ---------------------------------
 if "%1" NEQ "" (
 	SET srcFile=%1
 ) else (
-	set srcFile=jg_categories.http
+	set srcFile=jg_categories.tsk
 )
 
 REM source path
