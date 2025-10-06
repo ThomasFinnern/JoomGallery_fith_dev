@@ -25,6 +25,13 @@ We are sorry for "some" ugly parts of the style. This results from the limitatio
 !INCLUDE "site\userUpload\03.UserUploadView.en.md"
 !INCLUDE "site\userUpload\04.UserPanelView.en.md"
 
+!INCLUDE "site\userUpload\05.UserCategoriesView.en.md"
+!INCLUDE "site\userUpload\06.UserCategoyEdit.en.md"
+!INCLUDE "site\userUpload\07.UserImagesView.en.md"
+!INCLUDE "site\userUpload\08.UserImageEdit.en.md"
+
+
+
 
 
 
