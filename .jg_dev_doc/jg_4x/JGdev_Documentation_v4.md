@@ -189,7 +189,6 @@ The button name indicates where the link on the button leads
 
 The user user panel has several section which may be switched on or off in menu options
 
-
 #### Otions in user panel menu definitions
 
 * Display user limits: Display an area where actual count of images/categories are matched with config settings
@@ -200,39 +199,107 @@ The user user panel has several section which may be switched on or off in menu 
 * Number of latest images:  Number of latest user images displayed in the list
 * Display user images as manageable: Display user images as manageable like in images view. List length defined by joomla standard length
 
-
-
 ###  Display latest user categories
 
+This view part may not be shown as it can be switched of in the menu options
 
-![User panel(part XXX )](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.forwardLinks.en.png?raw=true  "")
-Buttons order changed !
+![User panel(part XXX )](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userPanel.Latest.Categories.en.png?raw=true  "")
+
+(1) Title:  
+	Click on title to edit the category  
+(2) Images:  
+	Shows number of images assigned to the category. Click on it to to view in the imageslist ony the images of this category 
+(3) Parent category:  
+(4) Actions:    
+    Edit or delete category
+(5) Published:  
+    Publish or unpubish the category	
+(6) Latest categories count:
+   Tells how many lattest items are shown. the number is an option in the menu but may be smaller when not enough items exist
+
 
 ###  Display latest images
 
+This view part may not be shown as it can be switched of in the menu options
 
-![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.forwardLinks.en.png?raw=true  "")
+![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userPanel.Latest.Images.en.png?raw=true  "")
 Buttons order changed !
+
+(1) Thumb image of image  
+(2) Title of image  
+   Click on title to edit the image  
+(3) Hits  
+(4) Downloads  
+(5) Category  
+(6) Actions  
+    Edit or delete image  
+(7) Published  
+    Publish or unpubish the category	
+(8) Latest images count:  
+   Tells how many lattest items are shown. the number is an option in the menu but may be smaller when not enough items exist
+
 
 ###  Display user images as manageable
 
+This view part may not be shown as it can be switched of in the menu options
 
-![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.forwardLinks.en.png?raw=true  "")
+Images are managable in the sense that they can be reordered and filtered.
+Here less imges are shown but thr view part is otherwise similar to the user image view.  
+It is enable for quick fixes of latest images but we recommend to use the "user images" view instead.
+
+The difference to "latest images" is twofold.
+1) Drag and drop can change the order of images
+2) The filter options above enable the appearance of selected images  
+   It may be removed if we cant get it to work 2025.10.07
+
+![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userPanel.ManagedImages.en.png?raw=true  "")
 Buttons order changed !
+
+(1) Three vertical points  
+Click on points enable the ordering which may be hidden when usinf filtering
+(2) Thumb image of image  
+(3) Title of image  
+   Click on title to edit the image  
+(4) Category  
+(5) Actions  
+    Edit or delete image  
+(6) Published  
+    Publish or unpubish the category	
+
+Following filter the images shown. The handling is as can be expected like in other joomla filtering.  
+(7) Search  
+(8) Filter Options  
+(9) Ordering image view  
+(10) Count of shown images  
+    Defined in joomla configuration list count
+(11) Select Status  
+(12) Select Category  
+
+
+
 
 
 ###  Display user limits
 
+This view part may not be shown as it can be switched of in the menu options
 
-![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.forwardLinks.en.png?raw=true  "")
+It tells about the number of images and categories belonging to the logged-in user.
+
+![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.UserLimits.en.png?raw=true  "")
 Buttons order changed !
 
-###  Display user information
+The values in column actual are calculated from the database. The maximum values are defined in JoomGallery configuration.
 
+As the comment indicates the limits are not enforced but this may change in the future.
 
+###  Display user overview
 
+This view part may not be shown as it can be switched of in the menu options
 
+It provides information about the number of images and categories belonging to the logged-in user.
 
+![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/upload.userOverview.en.png?raw=true  "")
+Buttons order changed !
 
 ### Forward links
 
@@ -266,21 +333,19 @@ The button name indicates where the link on the button leads
 
 
 
-## User Upload
+## User Category Edit Page 
 
-### User Category Edit Page 
+It behaves nearly like the backend so here it is more a reminder of functionality nd some parts are left out
 
 ![User Category Edit](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEditForm.en.png?raw=true  "")
 
 (1) Select the title   
 (2) Alias will be generated automatically  
 (3) Parent Category  
-The selection is limited to the categories of the logged in user.  
-**Attention:** The "root" category of the user displays itself as parent  
 (4) Should the images be visible direct after upload finished   
-(5) Which group should be able to see the images
-(6) Password
-(7) Add a description to the category
+(5) Which group should be able to see the images  
+(6) Password  
+(7) Add a description to the category  
 
 ### User Category Edit Options 
 
@@ -297,6 +362,17 @@ The selection is limited to the categories of the logged in user.
 ![User Category Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.Parameters.en.png?raw=true  "")
 
 
+### User Category Edit Buttons
+
+![User Category Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.buttons.en.png?raw=true  "")
+
+Most buutons work as the name expects
+
+(1) Save  
+(2) Save & Close  
+(3) Save As Copy  
+(4) Save & new  
+(5) Cancel  
 
 ## User Images 
 
@@ -316,37 +392,40 @@ The selection is limited to the categories of the logged in user.
 The button name indicates where the link on the button leads
 
 
-## User Upload
 
-### User Category Edit Page 
+## User image Edit Page 
 
-![User Category Edit](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEditForm.en.png?raw=true  "")
+It behaves nearly like the backend so here it is more a reminder of functionality nd some parts are left out
+
+
+ToDo: create userImageEditForm.en.png on big screen
+
+![User Category Edit](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userImageEditForm.en.png?raw=true  "")
 
 (1) Select the title   
 (2) Alias will be generated automatically  
-(3) Parent Category  
-The selection is limited to the categories of the logged in user.  
-**Attention:** The "root" category of the user displays itself as parent  
-(4) Should the images be visible direct after upload finished   
-(5) Which group should be able to see the images
-(6) Password
-(7) Add a description to the category
-
-### User Category Edit Options 
-
-![User Category Edit Options](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.Options.en.png?raw=true  "")
+(3) Published  
+(4) Category  
+(5) Features  
+(6) Hidden  
+(7) Access  
+(8) Tags  
+(9) Description  
 
 
-### User Category Edit Publishing 
-
-![User Category Edit Publishing](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.Publishing.en.png?raw=true  "")
 
 
-### User Category Edit Parameters 
-
-![User Category Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.Parameters.en.png?raw=true  "")
 
 
+### User Category Edit Buttons
+
+![User image Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userImageEdit.buttons.en.png?raw=true  "")
+
+Most buutons work as the name expects
+
+(1) Save  
+(2) Save & Close  
+(3) Cancel  
 
 
 
