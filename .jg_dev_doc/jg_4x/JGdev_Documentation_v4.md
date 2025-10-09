@@ -19,7 +19,7 @@ We are sorry for "some" ugly parts of the style. This results from the limitatio
 
 **Lets get started**
 
-# Frontend user uplod / User Panel 
+# Frontend User upload / User Panel 
 
 Joom gallery supports two main views (menues) to support users to upload images, create categories / galleries and edit the images ..
 
@@ -187,7 +187,7 @@ The button name indicates where the link on the button leads
 
 ## User panel
 
-The user user panel has several section which may be switched on or off in menu options
+The user user panel has several section which may be switched on or off in menu options   
 
 #### Otions in user panel menu definitions
 
@@ -253,7 +253,6 @@ The difference to "latest images" is twofold.
    It may be removed if we cant get it to work 2025.10.07
 
 ![User panel(complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userPanel.ManagedImages.en.png?raw=true  "")
-Buttons order changed !
 
 (1) Three vertical points  
 Click on points enable the ordering which may be hidden when usinf filtering
@@ -266,12 +265,12 @@ Click on points enable the ordering which may be hidden when usinf filtering
 (6) Published  
     Publish or unpubish the category	
 
-Following filter the images shown. The handling is as can be expected like in other joomla filtering.  
+Following filter for the images are shown. The handling is as can be expected like in other joomla filtering.  
 (7) Search  
 (8) Filter Options  
-(9) Ordering image view  
+(9) Ordering images in view  
 (10) Count of shown images  
-    Defined in joomla configuration list count
+    Can be canged for mor or less items to be shown. First value is defined in joomla configuration list count.
 (11) Select Status  
 (12) Select Category  
 
@@ -313,14 +312,26 @@ The button name indicates where the link on the button leads
 ### User Categories Page 
 ![User Categories (complete/parts)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategories.full.en.png?raw=true  "")
 
+(1) Three vertical points  
+Click on points enable the ordering which may be hidden when usinf filtering
+(2) Title of category  
+   Click on title to edit the category  
+(3) Images  
+   Click on images to view filtered images of this category    
+(4) Parent Category  
+(5) Date created  
+(6) Actions  
+    Edit or delete category  
+(7) Published  
+    Publish or unpubish the category	
 
-
-
-
-
-
-
-
+Following filter for the categories are shown. The handling is as can be expected like in other joomla filtering.  
+(8) Search  
+(9) Filter Options  
+(10) Ordering categories in view  
+(11) Count of shown categories  
+    Can be canged for mor or less items to be shown. First value is defined in joomla configuration list count.
+(12) Select Status    
 
 
 
@@ -345,6 +356,7 @@ It behaves nearly like the backend so here it is more a reminder of functionalit
 (4) Should the images be visible direct after upload finished   
 (5) Which group should be able to see the images  
 (6) Password  
+On password is set the password is hidden and can only be changed with a first click  on the right site of the control. A further button appears below the control to allow to remove the password
 (7) Add a description to the category  
 
 ### User Category Edit Options 
@@ -366,7 +378,7 @@ It behaves nearly like the backend so here it is more a reminder of functionalit
 
 ![User Category Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategoryEdit.buttons.en.png?raw=true  "")
 
-Most buutons work as the name expects
+Most buttons work as the name expects
 
 (1) Save  
 (2) Save & Close  
@@ -377,10 +389,29 @@ Most buutons work as the name expects
 ## User Images 
 
 ### User Images Page 
-![User Images (complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userCategories.full.en.png?raw=true  "")
+![User Images (complete)](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userImageses.full.en.png?raw=true  "")
 
+(1) Three vertical points  
+Click on points enable the ordering which may be hidden when usinf filtering  
+(2) Thumb image of image  
+(3) Title of image  
+   Click on title to edit the image  
+(4) Hits/Downloads  
+(5) Category  
+(6) Date of creation  
+(7) Actions  
+    Edit or delete image  
+(8) Published  
+    Publish or unpubish the category	
 
-
+Following filter for the images are shown. The handling is as can be expected like in other joomla filtering.  
+(9) Search  
+(10) Filter Options  
+(11) Ordering images in view  
+(12) Count of shown images  
+    Can be canged for mor or less items to be shown. First value is defined in joomla configuration list count.
+(13) Select Status    
+(14) Select Category    
 
 
 
@@ -398,9 +429,11 @@ The button name indicates where the link on the button leads
 It behaves nearly like the backend so here it is more a reminder of functionality nd some parts are left out
 
 
-ToDo: create userImageEditForm.en.png on big screen
+[ ] ToDo: create image on big screen
 
 ![User Category Edit](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userImageEditForm.en.png?raw=true  "")
+
+[ ] ToDo: create image on big screen
 
 (1) Select the title   
 (2) Alias will be generated automatically  
@@ -415,13 +448,11 @@ ToDo: create userImageEditForm.en.png on big screen
 
 
 
-
-
 ### User Category Edit Buttons
 
 ![User image Edit Parameters](https://github.com/ThomasFinnern/JoomGallery_fith_dev/blob/main/.jg_dev_doc/jg_4x/images/site.UserUpload/userImageEdit.buttons.en.png?raw=true  "")
 
-Most buutons work as the name expects
+Most buttons work as the name expects
 
 (1) Save  
 (2) Save & Close  
