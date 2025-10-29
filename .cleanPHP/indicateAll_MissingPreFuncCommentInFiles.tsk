@@ -1,0 +1,8 @@
+task:indicateAll_MissingPreFuncCommentInFiles
+    // /callerProjectId=JG
+/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
+	// /isNoRecursion=true
+/includeExt="php"
+/excludeFolderList=administrator/com_joomgallery/vendor
+    // /fileName="../testData/sinceTestFile.php"
+    // /isLogOnly=true

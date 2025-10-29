@@ -1,0 +1,10 @@
+task:indicateAll_MissingPreFuncCommentInFiles
+    // /callerProjectId=RSG2
+    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
+    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery"
+/srcRoot="./../../JoomGallery_fith/administrator/com_joomgallery"
+	// /isNoRecursion=true
+/includeExt="php"
+/excludeFolderList=vendor
+    // /fileName="../testData/sinceTestFile.php"
+/isLogOnly=true

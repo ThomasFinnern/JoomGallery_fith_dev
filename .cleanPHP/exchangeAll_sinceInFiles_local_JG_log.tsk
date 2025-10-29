@@ -1,23 +1,19 @@
-task:alignAll_use_Lines
+task:exchangeAll_sinceInFiles
 /callerProjectId=JG
-   // /srcRoot="./../../JoomGallery_fith"
+   // /type=component
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site"
-/srcRoot="./../../JoomGallery_fith/administrator/com_joomgallery"
+   // /srcRoot="./../../JoomGallery_fith/administrator/com_joomgallery"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src"
-   // /srcRoot="./../../JoomGallery_fith/administrator/com_joomgallery/src/CliCommand"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src/Controller"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src/Model"
-   // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
+/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
    // /srcRoot="./../../JoomGallery_fith_feature_user_upload_raw"
    // /srcRoot="./../../JoomGallery_fith_feature_user_upload_raw/site"
    // /srcRoot="./../../JoomGallery_fith_feature_user_panel_upload/site/com_joomgallery/src/Model"
    // /srcRoot="./../../JoomGallery_fith_feature_user_upload_raw/site/com_joomgallery/src/Model"
-	// /isNoRecursion=true
+   // /isNoRecursion=true
 /includeExt="php"
-
-// --- fileNamesList options ---------------------------   
-
+   // /fileName="../testData/sinceTestFile.php"
 /excludeFolderList=vendor
-
-/isWriteListToFile=true
-/listFileName="./../../JoomGallery_fith_dev/.buildPHP/foundFileNamesList_userPanel_admin.txt"
+/VersionId="4.2"
+/isLogOnly=true
