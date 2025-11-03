@@ -1,0 +1,9 @@
+task:indicateAll_NoDocInPreCommentInFiles
+    // /callerProjectId=RSG2
+/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
+	// /isNoRecursion=true
+/includeExt="php"
+    // /fileName="../testData/sinceTestFile.php"
+/excludeFolderList=administrator/com_joomgallery/vendor
+	// /isLogOnly=true
+	// /isLogDev=true
