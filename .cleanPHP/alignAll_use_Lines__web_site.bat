@@ -24,7 +24,7 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-REM more otions 
+REM more options 
 
 set OptionFile=
 
