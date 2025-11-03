@@ -1,0 +1,13 @@
+
+
+Search for joomgallery parts to create phpstan small with just needed code lines
+
+administrator\components\com_joomgallery
+components\com_joomgallery
+
+plugins\console\joomconsole
+plugins\privacy\joomgallery
+plugins\system\joomgallery
+plugins\system\joomowner
+plugins\task\joomgallery
+
