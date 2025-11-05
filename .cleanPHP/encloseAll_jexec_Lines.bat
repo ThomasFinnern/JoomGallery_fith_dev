@@ -1,9 +1,9 @@
 @ECHO OFF
-REM indicateAll_NoDocInPreCommentInFiles_log.bat
+REM encloseAll_jexec_Lines.bat
 REM
 CLS
 
-ECHO PHP doFileTasksCmd.php indicateAll_NoDocInPreCommentInFiles_log.tsk
+ECHO PHP doFileTasksCmd.php encloseAll_jexec_Lines.tsk
 ECHO.
 
 REM Path for calling
@@ -35,8 +35,8 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" doFileTasksCmd.php -f "../../JoomGallery_fith_Dev/.cleanPHP/indicateAll_NoDocInPreCommentInFiles_log.tsk" %1
-"%ExePath%php.exe" doFileTasksCmd.php -f "../../JoomGallery_fith_Dev/.cleanPHP/indicateAll_NoDocInPreCommentInFiles_log.tsk" %1
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../JoomGallery_fith_Dev/.cleanPHP/encloseAll_jexec_Lines.tsk %1
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../JoomGallery_fith_Dev/.cleanPHP/encloseAll_jexec_Lines.tsk %1
 
 popd
 
