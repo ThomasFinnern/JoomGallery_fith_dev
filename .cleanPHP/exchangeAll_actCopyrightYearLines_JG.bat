@@ -36,8 +36,8 @@ pushd  ..\fileHeaderLib
 REM pushd  ..\
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" exchangeAll_actCopyrightYearLines_JGCmd.php -f ..\tsk_file_examples/exchangeAll_actCopyrightYearLines_JG.tsk %1
-"%ExePath%php.exe" exchangeAll_actCopyrightYearLines_JGCmd.php -f ..\tsk_file_examples/exchangeAll_actCopyrightYearLines_JG.tsk %1
+echo --- "%ExePath%php.exe" exchangeAll_actCopyrightYearLines_JGCmd.php -f ../../JoomGallery_fith_Dev/.cleanPHP/exchangeAll_actCopyrightYearLines_JG.tsk %1
+"%ExePath%php.exe" exchangeAll_actCopyrightYearLines_JGCmd.php -f ../../JoomGallery_fith_Dev/.cleanPHP/exchangeAll_actCopyrightYearLines_JG.tsk %1
 
 popd
 
