@@ -4,7 +4,7 @@ REM Actual ruleset is used from joomla-cms 6.1 dev (2025.10.30)
 
 CLS
 
-ECHO PHP _phpcs.bat
+ECHO PHP _phpstan.bat
 ECHO.
 ECHO ----------------------------------------------
 ECHO php path
@@ -57,23 +57,23 @@ REM more options
 @REM  path or file
 REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload"
 REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\components\com_joomgallery\src\Model"
-set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\com_joomgallery\src\Model\ImagesModel.php"
-REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\com_joomgallery\src\Model\ImagesModel.php" 
+REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\com_joomgallery\src\Model\ImagesModel.php"
+REM set searchPath="e:\wamp64\www\joomgallery5x_dev"
+set searchPath="e:\wamp64\www\joomgallery5x"
 if NOT %1A==A (
  	set searchPath=%1
 )
 ECHO  - 'search path "%searchPath%"'
 
 REM ? standard ?
-Call :AddNextArg -p
+REM Call :AddNextArg -p
 
 REM ruleset file
-if NOT %2B==B (
- 		Call :AddNextArg --standard=%2
-) else (
+REM if NOT %2B==B (
+REM  		Call :AddNextArg --standard=%2
+REM ) else (
 REM 	Call :AddNextArg --standard="d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml"
-	Call :AddNextArg --standard="d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml"
-)
+REM )
 
 ECHO.
 ECHO ----------------------------------------------
@@ -86,8 +86,8 @@ REM d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml
 @REM "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --extensions=php -p --standard=d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml d:\Entwickl\2025\_gitHub\RSGallery2_J4
 @REM "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --help
 
-ECHO "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" %CmdArgs% %searchPath%
-"C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" %CmdArgs% %searchPath%
+ECHO "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpstan.bat" analyse %CmdArgs% %searchPath%
+"C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpstan.bat" analyse %CmdArgs% %searchPath%
 
 GOTO :EOF
 

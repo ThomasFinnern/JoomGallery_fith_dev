@@ -55,10 +55,9 @@ Set CmdArgs=
 REM more options
 
 @REM  path or file
-REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload"
-REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\components\com_joomgallery\src\Model"
-set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\com_joomgallery\src\Model\ImagesModel.php"
-REM set searchPath="d:\Entwickl\2025\_gitHub\JoomGallery_fith_feature_user_panel_upload\administrator\com_joomgallery\src\Model\ImagesModel.php" 
+set searchPath="e:\wamp64\www\joomgallery5x_dev\administrator\components\com_joomgallery"
+REM set searchPath="e:\wamp64\www\joomla5x\components\com_rsgallery2"
+REM set searchPath="model / plugins"
 if NOT %1A==A (
  	set searchPath=%1
 )
@@ -71,8 +70,7 @@ REM ruleset file
 if NOT %2B==B (
  		Call :AddNextArg --standard=%2
 ) else (
-REM 	Call :AddNextArg --standard="d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml"
-	Call :AddNextArg --standard="d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml"
+	Call :AddNextArg --standard="d:\Entwickl\2025\_gitHub\joomla-cms\ruleset.xml"
 )
 
 ECHO.
@@ -80,10 +78,10 @@ ECHO ----------------------------------------------
 ECHO command
 
 REM ./libraries/vendor/bin/phpcs --extensions=php -p --standard=ruleset.xml
-REM d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml 
+REM d:\Entwickl\2025\_gitHub\joomla-cms\ruleset.xml 
 
-@REM ECHO "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --extensions=php -p --standard=d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml d:\Entwickl\2025\_gitHub\RSGallery2_J4
-@REM "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --extensions=php -p --standard=d:\Entwickl\2025\_gitHub\JoomGallery_fith\ruleset.xml d:\Entwickl\2025\_gitHub\RSGallery2_J4
+@REM ECHO "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --extensions=php -p --standard=d:\Entwickl\2025\_gitHub\joomla-cms\ruleset.xml d:\Entwickl\2025\_gitHub\RSGallery2_J4
+@REM "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --extensions=php -p --standard=d:\Entwickl\2025\_gitHub\joomla-cms\ruleset.xml d:\Entwickl\2025\_gitHub\RSGallery2_J4
 @REM "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" --help
 
 ECHO "C:\Users\finnern\AppData\Roaming\Composer\vendor\bin\phpcs.bat" %CmdArgs% %searchPath%
