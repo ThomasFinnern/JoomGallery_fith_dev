@@ -9,7 +9,7 @@ task:put
 // /responseFile="d:\Entwickl\2025\_gitHub\apiByCurlHtml\src\results/jg_putGallery_result.json"
 /responseFile=""
 // /dataFile="d:\Entwickl\2025\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_putCategory_DataBare.json"
-/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\data_put\jg_putImage_API_06.json"
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_putImage_API_06.json"
 //=== Ideas ========================
 
 // following will be applied when the file is read
