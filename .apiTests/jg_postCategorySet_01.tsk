@@ -1,0 +1,56 @@
+//--- 01 put first gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_01_First.json"
+
+//--- 02 put gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_02.json"
+
+//--- 03 put gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_03.json"
+
+//--- 04 put gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_04.json"
+
+//--- 05 put gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_05.json"
+
+//--- 06 put gallery ------------------------------------------------
+//--- 07 put gallery ------------------------------------------------
+//--- 08 put gallery ------------------------------------------------
+//--- 09 put gallery ------------------------------------------------
+
+
+//--- xx put last gallery ------------------------------------------------
+task:put
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_xx_Last.json"
+
+
+

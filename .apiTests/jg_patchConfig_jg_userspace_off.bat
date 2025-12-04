@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApiTasksCmd.php -f .\jg_patchConfig_jg_userspace_off.tsk %1
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\CurlApiTasksCmd.php -f .\jg_patchConfig_jg_userspace_off.tsk %1
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_patchConfig_jg_userspace_off.tsk %1
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_patchConfig_jg_userspace_off.tsk %1
 
 GOTO :EOF
 

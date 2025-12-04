@@ -1,0 +1,7 @@
+task:post
+/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/apiPath="v1/joomgallery/categories"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/responseFile=""
+/dataFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_API_07.json"
+
