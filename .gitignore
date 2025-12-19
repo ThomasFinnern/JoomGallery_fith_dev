@@ -1,3 +1,8 @@
+
+// Until valid tests are given
+//.cypress/
+.cypress/**/cypressEnvVars.bat
+
 //.buildPHP/
 .buildPHP/*.log
 .buildPHP/*.*.log
