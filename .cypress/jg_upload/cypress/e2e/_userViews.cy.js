@@ -9,8 +9,18 @@ describe('visit all user views', () => {
 	cy.get('[name="Submit"]').click();
   })
 
+  //--- start views ----------------------------------------------
+  
+  it('displays form user panel', () => {
+	cy.visit('/component/joomgallery/userpanel');
+	cy.get('h3').first().should('have.text', 'User panel');
+
+	// No error/alarm ... from code 
+	cy.get('.alert-heading').should('not.exist');
+  })
+  
   it('displays form user images', () => {
-	cy.visit('userimages');
+	cy.visit('/component/joomgallery/userimages');
 	cy.get('h3').first().should('have.text', 'User images');
 
 	// No error/alarm ... from code 
@@ -18,62 +28,15 @@ describe('visit all user views', () => {
   })
   
   it('displays form user categories', () => {
-	cy.visit('usercategories');
+	cy.visit('/component/joomgallery/usercategories');
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
   })
   
-  it('displays form user panel', () => {
-	cy.visit('userpanel');
-	cy.get('h3').first().should('have.text', 'User panel');
-
-	// No error/alarm ... from code 
-	cy.get('.alert-heading').should('not.exist');
-  })
-  
-  it('displays edit form new user category', () => {
-	// cy.visit('usercategory?layout=edit');
-	cy.visit('usercategory?layout=editCat');
-	// cy.visit('usercategory?layout=editCat');
-	// cy.visit('usercategory?layout=editCat');
-	// cy.visit('usercategories');
-	// cy.get('.btn-success').click();
-	cy.get('h3').first().should('have.text', 'User category edit');
-
-	// No error/alarm ... from code 
-	cy.get('.alert-heading').should('not.exist');
-  })
-  
-  it('displays edit form existing user category', () => {
-	// cy.visit('usercategory/38-cypress-01?layout=edit');
-	cy.visit('usercategory/38-cypress-01?layout=editCat');
-	// cy.visit('usercategory?layout=editCat');
-	// cy.visit('usercategory?layout=editCat');
-  	// cy.visit('usercategories');
-	// cy.get('.btn-success').click();
-	cy.get('h3').first().should('have.text', 'User category edit');
-
-	// No error/alarm ... from code 
-	cy.get('.alert-heading').should('not.exist');
-  })
-  
-  it('displays edit form existing user image', () => {
-	// cy.visit('userimage/96-sonderlauf-5?layout=edit')
-	cy.visit('userimage/96-sonderlauf-5?layout=editImg')
-	// cy.visit('http://127.0.0.1/joomgallery5x_dev/component/joomgallery/userimage?layout=editImg');
-	// cy.visit('userimage?layout=edit');
-	cy.get('h3').first().should('have.text', 'User image edit');
-
-	// No error/alarm ... from code 
-	// cy.get('.alert-heading').should('exist');
-	cy.get('.alert-heading').should('not.exist');
-	
-  })
-
   // ----------------------------------------------  
-  // Not working with uppy :-(
+  // Not working with uppy :-( => needs ? one image uploaded
   it('displays form user upload', () => {
 	cy.visit('/component/joomgallery/userupload');
 	cy.get('h3').first().should('have.text', 'User upload');
@@ -83,6 +46,37 @@ describe('visit all user views', () => {
 	cy.get('.alert-heading').should('not.exist');
   })
 	  
+  //--- edit ----------------------------------------------
+  
+  it('displays edit form new user category', () => {
+	// cy.visit('/component/joomgallery/usercategory?layout=edit');
+	cy.visit('/component/joomgallery/usercategory?layout=editCat');
+	cy.get('h3').first().should('have.text', 'User category edit');
+
+	// No error/alarm ... from code 
+	cy.get('.alert-heading').should('not.exist');
+  })
+  
+  it('displays edit form existing user category', () => {
+	// cy.visit('/component/joomgallery/usercategory/38-cypress-01?layout=edit');
+	cy.visit('/component/joomgallery/usercategory/38-cypress-01?layout=editCat');
+	cy.get('h3').first().should('have.text', 'User category edit');
+
+	// No error/alarm ... from code 
+	cy.get('.alert-heading').should('not.exist');
+  })
+  
+  it('displays edit form existing user image', () => {
+	// cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=edit')
+	cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=editImg')
+	cy.get('h3').first().should('have.text', 'User image edit');
+
+	// No error/alarm ... from code 
+	// cy.get('.alert-heading').should('exist');
+	cy.get('.alert-heading').should('not.exist');
+	
+  })
+
 })
 
 

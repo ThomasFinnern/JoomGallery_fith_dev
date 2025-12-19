@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('user without management rights', () => {
 	
   beforeEach(() => {
 	cy.visit('/');
@@ -9,38 +9,96 @@ describe('template spec', () => {
 	cy.get('[name="Submit"]').click();
   })
 
-  it('displays form user panel', () => {
-	cy.visit('userpanel');
+  //--- start views ----------------------------------------------
+  
+  // can only be reached over menu item 
+  it('displays form user panel with warning', () => {
+	cy.visit('/component/joomgallery/userpanel');
 	cy.get('h3').first().should('have.text', 'User panel');
 
-	// No error/alarm ... from code 
+	// Warning expected
 	cy.get('.alert-warning').should('exist');
-	cy.get('div.alert-warning').should('exist');
-	//cy.get('.alert-heading').should('not.exist');
+//	cy.get('div.alert-warning').should('exist');
+  })
+
+//-------------------------------------------------
+// following pages can not be reached as such
+// they display the menu page
+  
+  it('displays form user images', () => {
+	cy.visit('/component/joomgallery/userimages');
+	cy.get('h3').first().should('have.text', 'User panel');
+
+	// Warning expected
+	cy.get('.alert-warning').should('exist');
+//	cy.get('div.alert-warning').should('exist');
   })
   
+  it('displays form user categories', () => {
+	cy.visit('/component/joomgallery/usercategories');
+	cy.get('h3').first().should('have.text', 'User panel');
 
-
-  // Not working with uppy :-(
-  it('displays form user upload with warning', () => {
-	cy.visit('/component/joomgallery/userupload');
-	// cy.get('h3').first().should('have.text', 'User upload');
-
-	// ToDo: realise a if ??? 
-	// category warning when no categories exist
-	// cy.get('.alert-warning').should('exist');
-	// cy.get('.alert-warning').should('exist');
-	cy.get('div.alert-warning').should('exist');
-	// cy.get('.alert-warning').should('not.exist');
+	// Warning expected
+	cy.get('.alert-warning').should('exist');
+//	cy.get('div.alert-warning').should('exist');
   })
   
-  // it('displays form upload', () => {
-	// cy.visit('/')
-	// cy.get('[data-testid="first-name"]').clear()
-	// cy.get('form').submit()
-	// cy.get('[data-testid="errors"]').should('contain', 'First name is required')
+  // //--- Not working with uppy :-( -----------------
+  // it('displays form user upload with warning (failes by )', () => {
+	// cy.visit('/component/joomgallery/userupload');
+	// // cy.get('h3').first().should('have.text', 'User panel');
+
+	// // Warning expected
+	// cy.get('.alert-warning').should('exist');
+// //	cy.get('div.alert-warning').should('exist');
+	// // // cy.get('.alert-heading').should('exist');
+	// // cy.get('.alert-heading').should('not.exist');
   // })
-	  
+  
+  //--- edit ----------------------------------------------
+  
+  // =>danger You don't have permission to access this view.
+  
+  it('displays edit form new user category', () => {
+	// cy.visit('/component/joomgallery/usercategory?layout=edit');
+	cy.visit('/component/joomgallery/usercategory?layout=editCat');
+
+	// Warning expected
+	cy.get('.alert-heading').should('exist');
+	// cy.get('.alert-heading').should('not.exist');
+  })
+  
+  it('displays edit form existing user category', () => {
+	// cy.visit('/component/joomgallery/usercategory/38-cypress-01?layout=edit');
+	cy.visit('/component/joomgallery/usercategory/38-cypress-01?layout=editCat');
+
+	// No error/alarm ... from code 
+	cy.get('.alert-heading').should('exist');
+	// cy.get('.alert-heading').should('not.exist');
+})
+  
+  it('displays edit form existing user image', () => {
+	// cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=edit')
+	cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=editImg')
+
+	// No error/alarm ... from code 
+	cy.get('.alert-heading').should('exist');
+	// cy.get('.alert-heading').should('not.exist');
+	
+  })
+
+  //--- Not working with uppy :-( -----------------
+  it('displays form user upload with warning (failes by )', () => {
+	cy.visit('/component/joomgallery/userupload');
+	// cy.get('h3').first().should('have.text', 'User panel');
+
+	// Warning expected
+	cy.get('.alert-warning').should('exist');
+//	cy.get('div.alert-warning').should('exist');
+	// // cy.get('.alert-heading').should('exist');
+	// cy.get('.alert-heading').should('not.exist');
+  })
+  
 })
 
 

@@ -1,3 +1,5 @@
+// example for session 
+// not adapted for JG
 const login = (name, password) => {
   cy.session([name, password], () => {
     cy.visit('/login')

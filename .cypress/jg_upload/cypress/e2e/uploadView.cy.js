@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('visit upload view', () => {
 	
   beforeEach(() => {
 	cy.visit('/');
@@ -20,6 +20,12 @@ describe('template spec', () => {
 	cy.get('.alert-heading').should('not.exist');
   })
   	  
+// ToDo: further checks	  
+// 	- select cat, should have more then zero ...  
+// 	- switch debug flag
+// 	- fill out ...
+// 	- 
+// 	- ! upload should be a seperate file
+	  
 })
-
 
