@@ -17,7 +17,6 @@ describe('edit category by title', () => {
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	cy.get('.alert-heading').should('not.exist');
-	// cy.get('.btn-success').click();
 
 	// category name is also link 
 	cy.get('a').contains('cypress category temp').click();
@@ -36,7 +35,7 @@ describe('edit category by title', () => {
 	//--- change title and alias ----------------------------------
 	
 	cy.log('01.title');
-	cy.get('[name="jform[title]"]').type("cypress category edited");
+	cy.get('[name="jform[title]"]').clear().type("cypress category edited");
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias
 	cy.get('[name="jform[alias]"]').clear(); // prevent double alias
 	

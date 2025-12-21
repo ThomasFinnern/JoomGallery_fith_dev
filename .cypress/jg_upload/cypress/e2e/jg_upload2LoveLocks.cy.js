@@ -17,7 +17,6 @@ describe('Create category', () => {
 	cy.get('h3').first().should('have.text', 'User upload');
 
 	cy.get('.alert-heading').should('not.exist');
-	// cy.get('.btn-success').click();
 
   })
 
@@ -47,7 +46,7 @@ describe('Create category', () => {
 
 	//--- change title and author ----------------------------------
 		
-	cy.get('[name="jform[title]"]').type("love it ");
+	cy.get('[name="jform[title]"]').clear().type("love it ");
 	cy.get('[name="jform[author]"]').type("thomas");
 	
 

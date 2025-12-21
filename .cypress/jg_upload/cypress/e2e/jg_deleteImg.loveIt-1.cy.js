@@ -11,7 +11,7 @@ describe('Delete image love it -1', () => {
 	cy.get('[name="password"]').type(Cypress.env("login_pass"));
 	cy.get('[name="Submit"]').click();
 	
-	//--- select existing category ----------------------------------
+	//--- select existing image ----------------------------------
 		
 	cy.visit('/component/joomgallery/userimages');
 	cy.get('h3').first().should('have.text', 'User images');
@@ -23,6 +23,8 @@ describe('Delete image love it -1', () => {
 	cy.get('select#list_limit').select('All');
 	cy.get('select#list_limit').trigger('click');
 	
+	//--- image should exist ----------------------------------
+		
 	// image should exist
 	cy.get('a').contains('love it -1').should('exist');;
 

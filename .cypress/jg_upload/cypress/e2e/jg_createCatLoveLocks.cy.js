@@ -23,7 +23,6 @@ describe('Create category love locks', () => {
 	
 	//--- select new category ----------------------------------
 		
-	// cy.get('.btn-success').click();
     cy.get('a').contains(' New category ').click();
 	// cy.get('a:contains("New category")');
 
@@ -37,7 +36,7 @@ describe('Create category love locks', () => {
 	
 	//--- change title and alias ----------------------------------
 		
-	cy.get('[name="jform[title]"]').type("cy love locks");
+	cy.get('[name="jform[title]"]').clear().type("cy love locks");
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias
 	cy.get('[name="jform[alias]"]').clear(); // prevent double alias
 	
