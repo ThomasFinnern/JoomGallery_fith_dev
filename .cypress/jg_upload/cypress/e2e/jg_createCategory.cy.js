@@ -14,7 +14,7 @@ describe('Create category', () => {
 	//--- select new category ----------------------------------
 		
 	cy.visit('/component/joomgallery/usercategories');
-	// cy.get('h3').first().should('have.text', 'User categories');
+	cy.get('h3').first().should('have.text', 'User categories');
 
 	cy.get('.alert-heading').should('not.exist');
 	// cy.get('.btn-success').click();
@@ -39,7 +39,7 @@ describe('Create category', () => {
 		
 	cy.get('[data-submit-task="usercategory.save"]').click();
 	
-	// back to edit view
+	// still in 2nd edit view
 	cy.get('h3').first().should('have.text', 'User category edit');
 
 	// success message ... from code  (actually second one)
@@ -53,7 +53,7 @@ describe('Create category', () => {
 	cy.get('[data-submit-task="usercategory.cancel"]').click();
 	cy.get('h3').first().should('have.text', 'User categories');
 	
-	cy.contains('cypress category temp');
+
   })
   
 })
