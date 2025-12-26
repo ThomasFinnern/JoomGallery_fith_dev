@@ -2,6 +2,8 @@ describe('edit category by title', () => {
 	
   beforeEach(() => {
 	
+	cy.viewport(1000, 1100);
+
 	//--- login ----------------------------------
 	
 	cy.visit('/');
@@ -46,7 +48,7 @@ describe('edit category by title', () => {
 	cy.get('[name="jform[title]"]').should('have.value', 'cypress category temp');
 	
 	//--- change title and alias ----------------------------------
-	
+
 	cy.log('01.title');
 	cy.get('[name="jform[title]"]').clear().type("cypress category edited");
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias

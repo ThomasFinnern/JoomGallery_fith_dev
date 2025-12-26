@@ -2,6 +2,8 @@ describe('Create category love locks', () => {
 	
   beforeEach(() => {
 	
+	cy.viewport(1000, 1100);
+
 	//--- login ----------------------------------
 	
 	cy.visit('/');
@@ -17,6 +19,13 @@ describe('Create category love locks', () => {
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	cy.get('.alert-heading').should('not.exist');
+	
+	//--- select show all ----------------------------------
+		
+	cy.get('select#list_limit').should('exist');
+	cy.get('select#list_limit').trigger('click');
+	cy.get('select#list_limit').select('All');
+	cy.get('select#list_limit').trigger('click');
 	
 	// category does not exist
 	cy.get('a').contains('cy love locks').should('not.exist');;
@@ -51,7 +60,13 @@ describe('Create category love locks', () => {
 	cy.get('.alert-message').eq(1).should('have.text', 'Item successfully saved.');
     cy.get('.alert-message').contains('Item successfully saved.');
 
+	//--- select show all ----------------------------------
 		
+	cy.get('select#list_limit').should('exist');
+	cy.get('select#list_limit').trigger('click');
+	cy.get('select#list_limit').select('All');
+	cy.get('select#list_limit').trigger('click');
+	
 	cy.get('a').contains('cy love locks').should('exist');;
 
   })

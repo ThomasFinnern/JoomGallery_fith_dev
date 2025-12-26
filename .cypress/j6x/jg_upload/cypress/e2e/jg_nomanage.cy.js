@@ -1,6 +1,11 @@
 describe('user without management rights', () => {
 	
   beforeEach(() => {
+	
+	cy.viewport(1000, 1100);
+
+	//--- login ----------------------------------
+	
 	cy.visit('/');
 	cy.get('[name="username"]').click();
 	cy.get('[name="username"]').type("jgnomanage");

@@ -2,6 +2,8 @@ describe('Delete category love locks', () => {
 	
   beforeEach(() => {
 	
+	cy.viewport(1000, 1100);
+
 	//--- login ----------------------------------
 	
 	cy.visit('/');

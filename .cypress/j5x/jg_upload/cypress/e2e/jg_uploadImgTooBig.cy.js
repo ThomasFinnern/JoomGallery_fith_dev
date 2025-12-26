@@ -2,6 +2,8 @@ describe('Create category', () => {
 	
   beforeEach(() => {
 	
+	cy.viewport(1000, 1100);
+
 	//--- login ----------------------------------
 	
 	cy.visit('/');

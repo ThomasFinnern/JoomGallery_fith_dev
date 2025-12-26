@@ -2,6 +2,8 @@ describe('edit category by icon ', () => {
 	
   beforeEach(() => {
 	
+	cy.viewport(1000, 1100);
+
 	//--- login ----------------------------------
 	
 	cy.visit('/');
@@ -84,7 +86,7 @@ describe('edit category by icon ', () => {
 
 	// Category name then find next edit icon button in row 
 	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains('cypress category temp')
+	cy.get('a').contains('cypress category edited')
 		.parent().parent()
 		.find('.icon-edit')
 		.click();

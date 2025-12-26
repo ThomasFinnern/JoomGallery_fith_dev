@@ -1,6 +1,11 @@
 describe('visit upload view', () => {
 	
   beforeEach(() => {
+	
+	cy.viewport(1000, 1100);
+
+	//--- login ----------------------------------
+	
 	cy.visit('/');
 	cy.get('[name="username"]').click();
 	cy.get('[name="username"]').type(Cypress.env("login_name"));
