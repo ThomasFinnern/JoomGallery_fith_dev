@@ -49,7 +49,7 @@ describe('edit image by title', () => {
 	cy.get('[name="jform[title]"]').should('have.value', 'love it -1');
 	
 	//--- change title and alias ----------------------------------
-	
+
 	cy.log('01.title');
 	cy.get('[name="jform[title]"]').clear().type("cypress image edited");
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias

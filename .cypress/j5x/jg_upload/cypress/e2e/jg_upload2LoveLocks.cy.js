@@ -31,7 +31,7 @@ describe('Create category', () => {
 	//--- upload file (name) ----------------------------------
 		
 	cy.get('.uppy-Dashboard-AddFiles-list')
-		.selectFile('cypress/fixtures/images/2015-10-11_00001.jpg', {action: 'drag-drop'})	
+		.selectFile('cypress/fixtures/images/2015-10-11_00001.jpg', {action: 'drag-drop'});	
 		
 	//--- select category cy love locks ----------------------------------
 		

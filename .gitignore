@@ -1,5 +1,4 @@
 
-// Until valid tests are given
 //.cypress/
 .cypress/**/cypressEnvVars.bat
 

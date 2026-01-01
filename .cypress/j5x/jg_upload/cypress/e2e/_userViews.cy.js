@@ -1,5 +1,19 @@
 describe('visit all user views', () => {
 	
+  // before(() => {
+	
+	// cy.viewport(1000, 1100);
+
+	// //--- login ----------------------------------
+	
+	// cy.visit('/');
+	// cy.get('[name="username"]').click();
+	// cy.get('[name="username"]').type(Cypress.env("login_name"));
+	// cy.get('[name="password"]').click();
+	// cy.get('[name="password"]').type(Cypress.env("login_pass"));
+	// cy.get('[name="Submit"]').click();
+  // })
+
   beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
@@ -150,6 +164,19 @@ describe('visit all user views', () => {
 	// cy.get('.alert-heading').should('exist');
 	cy.get('.alert-heading').should('not.exist');	
   })
+
+  // after(() => {
+	
+	// cy.viewport(1000, 1100);
+
+	// //--- logout ----------------------------------
+	
+	// cy.visit('/');
+	
+	// cy.get('button').contains('Log out').should('exist');
+	// cy.get('button').contains('Log out').click();
+
+  // })
 
 })
 

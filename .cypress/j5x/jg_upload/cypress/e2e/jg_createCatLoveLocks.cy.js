@@ -54,7 +54,7 @@ describe('Create category love locks', () => {
 	// back to list view
 	cy.get('[data-submit-task="usercategory.saveAndClose"]').click();
 	
-	//--- check category is created ----------------------------------
+	//--- check messages category is created ----------------------------------
 	
 	// success message ... from code  (actually second one)
 	cy.get('.alert-message').eq(1).should('have.text', 'Item successfully saved.');
@@ -66,8 +66,10 @@ describe('Create category love locks', () => {
 	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
 	cy.get('select#list_limit').trigger('click');
-	
-	cy.get('a').contains('cy love locks').should('exist');;
+
+	  //--- check gallery is created ----------------------------------
+
+	  cy.get('a').contains('cy love locks').should('exist');;
 
   })
   
