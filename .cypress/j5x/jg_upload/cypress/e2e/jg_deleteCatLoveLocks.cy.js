@@ -23,7 +23,7 @@ describe('Delete category love locks', () => {
 
   })
 
-  it('delete category', () => {
+  it('delete gallery', () => {
 	  
 	//--- delete category ----------------------------------
 		
@@ -33,13 +33,22 @@ describe('Delete category love locks', () => {
 		.find('.icon-trash')
 		.click();
 
-	//--- check category is deleted ----------------------------------
-	
+	//--- check messages category is created ----------------------------------
+
 	// success message ... from code  (actually second one)
 	cy.get('.alert-message').eq(1).should('have.text', '1 Items successfully deleted.');
     cy.get('.alert-message').contains('1 Items successfully deleted.');
-		
-	cy.get('a').contains('cy love locks').should('not.exist');;
+
+    //--- select show all ----------------------------------
+
+    cy.get('select#list_limit').should('exist');
+	cy.get('select#list_limit').trigger('click');
+	cy.get('select#list_limit').select('All');
+	cy.get('select#list_limit').trigger('click');
+
+	  //--- check category is deleted ----------------------------------
+
+	  cy.get('a').contains('cy love locks').should('not.exist');;
 
   })
 

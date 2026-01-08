@@ -1,4 +1,4 @@
-describe('Create category', () => {
+describe('Upload image to cat. love locks', () => {
 	
   beforeEach(() => {
 	
@@ -40,11 +40,10 @@ describe('Create category', () => {
 	cy.get('.choices__list--single').should('exist')
 	cy.get('.choices__list--single').click();
 
+    cy.log('selection click ');
 	cy.get('.choices__item').first().should('exist')
-	cy.log('selection exists');
 	cy.get('.choices__item').contains('cy love locks').should('exist')
-	cy.log('selection click ');
-	cy.get('.choices__item').contains('cy love locks').click()
+	cy.get('.choices__item').select('cy love locks')
 
 	//--- change title and author ----------------------------------
 		

@@ -67,9 +67,9 @@ describe('Create category love locks', () => {
 	cy.get('select#list_limit').select('All');
 	cy.get('select#list_limit').trigger('click');
 
-	  //--- check gallery is created ----------------------------------
+    //--- check gallery is created ----------------------------------
 
-	  cy.get('a').contains('cy love locks').should('exist');;
+	cy.get('a').contains('cy love locks').should('exist');;
 
   })
   

@@ -36,6 +36,7 @@ describe('visit all user views', () => {
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+	cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user images', () => {
@@ -44,6 +45,7 @@ describe('visit all user views', () => {
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user categories', () => {
@@ -52,6 +54,7 @@ describe('visit all user views', () => {
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user upload', () => {
@@ -61,6 +64,7 @@ describe('visit all user views', () => {
 	// No error/alarm ... from code 
 	// cy.get('.alert-heading').should('exist');
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
 	  
   //--- edit ----------------------------------------------
@@ -100,7 +104,7 @@ describe('visit all user views', () => {
 	//--- category should exist ----------------------------------
 		
 	// category should exist
-	cy.get('a').contains('cypress category temp').should('exist');;
+	cy.get('a').contains('cypress category temp').should('exist');
 
 	//--- click on row category icon ----------------------------------
 		
@@ -144,7 +148,7 @@ describe('visit all user views', () => {
 	//--- image should exist ----------------------------------
 		
 	// image should exist
-	cy.get('a').contains('love it -1').should('exist');;
+	cy.get('a').contains('love it -1').should('exist');
 
 	//--- click on row image icon ----------------------------------
 		
