@@ -17,8 +17,3 @@ it('displays form user panel', () => {
 	cy.get('b:contains("Warning")').should('not.exist');
 });
 
-it('neu', function() {});
-it('neu', function() {});
-
-it('neu', function() {});
-
