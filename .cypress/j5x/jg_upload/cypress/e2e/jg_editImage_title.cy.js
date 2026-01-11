@@ -21,11 +21,8 @@ describe('edit image by title', () => {
 	cy.get('.alert-heading').should('not.exist');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- image should exist ----------------------------------
 		
@@ -68,11 +65,8 @@ describe('edit image by title', () => {
     cy.get('.alert-message').contains('Item successfully saved.');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
-	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
+
+	  cy.get('select#list_limit').select('All');
 	
 	//--- rewrite name to original -------------------------------------------------
 
@@ -95,11 +89,8 @@ describe('edit image by title', () => {
 	cy.get('h3').first().should('have.text', 'User images');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
-	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
+
+	  cy.get('select#list_limit').select('All');
 	
 	//--- finish with check ----------------------------------------------------------
 

@@ -41,10 +41,7 @@ describe('Delete category love locks', () => {
 
     //--- select show all ----------------------------------
 
-    cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 
 	  //--- check category is deleted ----------------------------------
 

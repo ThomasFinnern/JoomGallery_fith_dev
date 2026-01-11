@@ -19,11 +19,8 @@ describe('Delete image love it -1', () => {
 	cy.get('h3').first().should('have.text', 'User images');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- image should exist ----------------------------------
 		

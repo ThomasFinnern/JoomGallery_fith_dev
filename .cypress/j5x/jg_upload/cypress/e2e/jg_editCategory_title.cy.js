@@ -21,11 +21,8 @@ describe('edit category by title', () => {
 	cy.get('.alert-heading').should('not.exist');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- category should exist ----------------------------------
 		
@@ -67,11 +64,8 @@ describe('edit category by title', () => {
     cy.get('.alert-message').contains('Item successfully saved.');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- rewrite name to original -------------------------------------------------
 
@@ -94,11 +88,8 @@ describe('edit category by title', () => {
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
-	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
+
+    cy.get('select#list_limit').select('All');
 	
 	//--- finish with check ----------------------------------------------------------
 

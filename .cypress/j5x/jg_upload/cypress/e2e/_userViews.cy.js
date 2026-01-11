@@ -95,11 +95,8 @@ describe('visit all user views', () => {
 	cy.get('.alert-heading').should('not.exist');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- category should exist ----------------------------------
 		
@@ -139,11 +136,8 @@ describe('visit all user views', () => {
 	cy.get('.alert-heading').should('not.exist');
 
 	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
+
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- image should exist ----------------------------------
 		
