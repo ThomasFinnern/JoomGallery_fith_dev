@@ -1,4 +1,6 @@
-describe('Delete image love it -1', () => {
+describe('Delete category love locks', () => {
+
+	let galleryName = "cy test";
 	
   beforeEach(() => {
 	
@@ -13,46 +15,42 @@ describe('Delete image love it -1', () => {
 	cy.get('[name="password"]').type(Cypress.env("login_pass"));
 	cy.get('[name="Submit"]').click();
 	
-	//--- select existing image ----------------------------------
+	//--- select existing category ----------------------------------
 		
-	cy.visit('/component/joomgallery/userimages');
-	cy.get('h3').first().should('have.text', 'User images');
+	cy.visit('/component/joomgallery/usercategories');
+	cy.get('h3').first().should('have.text', 'User categories');
 
-	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').select('All');
-	
-	//--- image should exist ----------------------------------
-		
-	// image should exist
-	cy.get('a').contains('love it -1').should('exist');;
+	// category cy lovelock exists
+	cy.get('a').contains(galleryName);
 
   })
 
-  it('delete image', () => {
+  it('delete category', () => {
 	  
-	//--- start with existing ----------------------------------
-		
-	// image should exist
-	cy.get('a').contains('love it -1').should('exist');;
-
-	//--- delete image ----------------------------------
+	//--- delete category ----------------------------------
 		
 	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains('love it -1').first()
+	cy.get('a').contains(galleryName)
 		.parent().parent()
 		.find('.icon-trash')
 		.click();
 
 	//--- check category is deleted ----------------------------------
-		
+
 	// success message ... from code  (actually second one)
 	cy.get('.alert-message').eq(1).should('have.text', '1 Items successfully deleted.');
     cy.get('.alert-message').contains('1 Items successfully deleted.');
 
-	cy.get('a').contains('love it -1').should('not.exist');;
+    //--- select show all ----------------------------------
+
+	cy.get('select#list_limit').select('All');
+
+	  //--- check category is deleted ----------------------------------
+
+	  cy.get('a').contains(galleryName).should('not.exist');;
 
   })
 
 })
+
 

@@ -22,10 +22,7 @@ describe('edit image by icon', () => {
 
 	//--- select show all ----------------------------------
 		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- image should exist ----------------------------------
 		
@@ -77,10 +74,7 @@ describe('edit image by icon', () => {
 
 	//--- select show all ----------------------------------
 		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- rewrite name to original -------------------------------------------------
 
@@ -112,10 +106,7 @@ describe('edit image by icon', () => {
 
 	//--- select show all ----------------------------------
 		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- finish with check ----------------------------------------------------------
 

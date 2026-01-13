@@ -1,6 +1,10 @@
 describe('edit category by title', () => {
-	
-  beforeEach(() => {
+
+	let galleryName = "cy test";
+	// let galleryName = "cypress category temp";
+	let galleryEditName = "cypress category edited";
+
+	beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
 
@@ -27,11 +31,11 @@ describe('edit category by title', () => {
 	//--- category should exist ----------------------------------
 		
 	// category should exist
-	cy.get('a').contains('cypress category temp').should('exist');;
+	cy.get('a').contains(galleryName).should('exist');;
 
 	//--- click on row category title  ----------------------------------
 	// category name is also link 
-	cy.get('a').contains('cypress category temp').click();
+	cy.get('a').contains(galleryName).click();
 
   })
 
@@ -42,12 +46,12 @@ describe('edit category by title', () => {
 	cy.get('h3').first().should('have.text', 'User category edit');
 	
 	// test if matching
-	cy.get('[name="jform[title]"]').should('have.value', 'cypress category temp');
+	cy.get('[name="jform[title]"]').should('have.value', galleryName);
 	
 	//--- change title and alias ----------------------------------
 
 	cy.log('01.title');
-	cy.get('[name="jform[title]"]').clear().type("cypress category edited");
+	cy.get('[name="jform[title]"]').clear().type(galleryEditName);
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias
 	cy.get('[name="jform[alias]"]').clear(); // prevent double alias
 	
@@ -70,7 +74,7 @@ describe('edit category by title', () => {
 	//--- rewrite name to original -------------------------------------------------
 
 	// category name is also link 
-	cy.get('a').contains('cypress category edited').click();
+	cy.get('a').contains(galleryEditName).click();
 
 	//--- change title and alias ----------------------------------
 		
@@ -95,7 +99,7 @@ describe('edit category by title', () => {
 
 	// category name is also link 
 	// attention: there may be more than one
-	cy.get('a').contains('cypress category temp');
+	cy.get('a').contains(galleryName);
 
   })
     

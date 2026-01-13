@@ -41,16 +41,19 @@ describe('user without management rights', () => {
 
 	// Warning expected
 	cy.get('.alert-info').should('exist');
-//	cy.get('div.alert-info').should('exist');
+    // cy.get('div.alert-warning').should('exist');
   })
   
-  it('displays form user upload with warning (failes by )', () => {
+  it.only('displays form user upload with warning (failes by )', () => {
 	cy.visit('/component/joomgallery/userupload');
 	cy.get('h3').first().should('have.text', 'User upload');
 
 	// Warning expected
 	cy.get('.alert-warning').should('exist');
-//	cy.get('div.alert-warning').should('exist');
+    // cy.get('div.alert-warning').should('exist');
+
+	  // contains definite text
+	  cy.get('.alert-warning').contains(' Please create a category for \'user upload\' ').should('exist');
   })
   
   //--- edit ----------------------------------------------

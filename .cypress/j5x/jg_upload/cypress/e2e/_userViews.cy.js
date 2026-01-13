@@ -1,20 +1,10 @@
 describe('visit all user views', () => {
-	
-  // before(() => {
-	
-	// cy.viewport(1000, 1100);
 
-	// //--- login ----------------------------------
-	
-	// cy.visit('/');
-	// cy.get('[name="username"]').click();
-	// cy.get('[name="username"]').type(Cypress.env("login_name"));
-	// cy.get('[name="password"]').click();
-	// cy.get('[name="password"]').type(Cypress.env("login_pass"));
-	// cy.get('[name="Submit"]').click();
-  // })
+	// let galleryName = 'cypress category temp';
+	let galleryName = "cy test";
+	let imageName = "love it -1";
 
-  beforeEach(() => {
+	beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
 
@@ -31,6 +21,7 @@ describe('visit all user views', () => {
   //--- start views ----------------------------------------------
   
   it('displays form user panel', () => {
+
 	cy.visit('/component/joomgallery/userpanel');
 	cy.get('h3').first().should('have.text', 'User panel');
 
@@ -101,13 +92,13 @@ describe('visit all user views', () => {
 	//--- category should exist ----------------------------------
 		
 	// category should exist
-	cy.get('a').contains('cypress category temp').should('exist');
+	cy.get('a').contains(galleryName).should('exist');
 
 	//--- click on row category icon ----------------------------------
 		
 	// Category name then find next edit icon button in row 
 	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains('cypress category temp')
+	cy.get('a').contains(galleryName)
 		.parent().parent()
 		.find('.icon-edit')
 		.click();
@@ -142,19 +133,16 @@ describe('visit all user views', () => {
 	//--- image should exist ----------------------------------
 		
 	// image should exist
-	cy.get('a').contains('love it -1').should('exist');
+	cy.get('a').contains(imageName).should('exist');
 
 	//--- click on row image icon ----------------------------------
 		
 	// Category name then find next edit icon button in row 
 	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains('love it -1')
+	cy.get('a').contains(imageName)
 		.parent().parent()
 		.find('.icon-edit')
 		.click();
-
-
-
 
 	cy.get('h3').first().should('have.text', 'User image edit');
 
@@ -162,19 +150,6 @@ describe('visit all user views', () => {
 	// cy.get('.alert-heading').should('exist');
 	cy.get('.alert-heading').should('not.exist');	
   })
-
-  // after(() => {
-	
-	// cy.viewport(1000, 1100);
-
-	// //--- logout ----------------------------------
-	
-	// cy.visit('/');
-	
-	// cy.get('button').contains('Log out').should('exist');
-	// cy.get('button').contains('Log out').click();
-
-  // })
 
 })
 

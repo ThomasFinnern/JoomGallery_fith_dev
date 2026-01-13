@@ -17,11 +17,13 @@ describe('visit all user views', () => {
   //--- start views ----------------------------------------------
   
   it('displays form user panel', () => {
+
 	cy.visit('/component/joomgallery/userpanel');
 	cy.get('h3').first().should('have.text', 'User panel');
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+	cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user images', () => {
@@ -30,6 +32,7 @@ describe('visit all user views', () => {
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user categories', () => {
@@ -38,6 +41,7 @@ describe('visit all user views', () => {
 
 	// No error/alarm ... from code 
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
   
   it('displays form user upload', () => {
@@ -47,6 +51,7 @@ describe('visit all user views', () => {
 	// No error/alarm ... from code 
 	// cy.get('.alert-heading').should('exist');
 	cy.get('.alert-heading').should('not.exist');
+    cy.get('b:contains("Warning")').should('not.exist');
   })
 	  
   //--- edit ----------------------------------------------
@@ -78,15 +83,12 @@ describe('visit all user views', () => {
 
 	//--- select show all ----------------------------------
 		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- category should exist ----------------------------------
 		
 	// category should exist
-	cy.get('a').contains('cypress category temp').should('exist');;
+	cy.get('a').contains('cypress category temp').should('exist');
 
 	//--- click on row category icon ----------------------------------
 		
@@ -122,15 +124,12 @@ describe('visit all user views', () => {
 
 	//--- select show all ----------------------------------
 		
-	cy.get('select#list_limit').should('exist');
-	cy.get('select#list_limit').trigger('click');
 	cy.get('select#list_limit').select('All');
-	cy.get('select#list_limit').trigger('click');
 	
 	//--- image should exist ----------------------------------
 		
 	// image should exist
-	cy.get('a').contains('love it -1').should('exist');;
+	cy.get('a').contains('love it -1').should('exist');
 
 	//--- click on row image icon ----------------------------------
 		
@@ -140,9 +139,6 @@ describe('visit all user views', () => {
 		.parent().parent()
 		.find('.icon-edit')
 		.click();
-
-
-
 
 	cy.get('h3').first().should('have.text', 'User image edit');
 

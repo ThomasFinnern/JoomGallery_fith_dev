@@ -1,6 +1,8 @@
-describe('Create category love locks', () => {
-	
-  beforeEach(() => {
+describe('Create category', () => {
+
+	let galleryName = "cy test";
+
+	beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
 
@@ -13,28 +15,19 @@ describe('Create category love locks', () => {
 	cy.get('[name="password"]').type(Cypress.env("login_pass"));
 	cy.get('[name="Submit"]').click();
 	
-	//--- visit category list ----------------------------------
+	//--- select new category ----------------------------------
 		
 	cy.visit('/component/joomgallery/usercategories');
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	cy.get('.alert-heading').should('not.exist');
-	
-	//--- select show all ----------------------------------
-		
-	cy.get('select#list_limit').select('All');
-	
-	// category does not exist
-	cy.get('a').contains('cy love locks').should('not.exist');;
-	
-	//--- select new category ----------------------------------
-		
+	// cy.get('.btn-success').click();
     cy.get('a').contains(' New category ').click();
 	// cy.get('a:contains("New category")');
 
   })
 
-  it('fill out a new category (love locks)', () => {
+  it('fill out a new category', () => {
 	  
 	//--- check category form ----------------------------------
 		
@@ -42,30 +35,38 @@ describe('Create category love locks', () => {
 	
 	//--- change title and alias ----------------------------------
 		
-	cy.get('[name="jform[title]"]').clear().type("cy love locks");
+	cy.get('[name="jform[title]"]').type(galleryName);
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias
 	cy.get('[name="jform[alias]"]').clear(); // prevent double alias
 	
-	//--- save and exit to list ----------------------------------
+	//--- save form and check title ----------------------------------
 		
-	// back to list view
-	cy.get('[data-submit-task="usercategory.saveAndClose"]').click();
+	cy.get('[data-submit-task="usercategory.save"]').click();
 	
-	//--- check messages category is created ----------------------------------
-	
+	// still in 2nd edit view
+	cy.get('h3').first().should('have.text', 'User category edit');
+
 	// success message ... from code  (actually second one)
 	cy.get('.alert-message').eq(1).should('have.text', 'Item successfully saved.');
     cy.get('.alert-message').contains('Item successfully saved.');
 
-	//--- select show all ----------------------------------
+	cy.get('[name="jform[title]"]').should('have.value', galleryName);
 		
-	cy.get('select#list_limit').select('All');
+	//--- cancel to categories view ----------------------------------
+		
+	cy.get('[data-submit-task="usercategory.cancel"]').click();
+	cy.get('h3').first().should('have.text', 'User categories');
 
-    //--- check gallery is created ----------------------------------
-	
-	cy.get('a').contains('cy love locks').should('exist');;
+	  //--- select show all ----------------------------------
 
+	  cy.get('select#list_limit').select('All');
+
+	  //--- check gallery is created ----------------------------------
+
+	  cy.log('--- check gallery is created');
+	  cy.get('a').contains(galleryName).should('exist');
   })
   
 })
+
 

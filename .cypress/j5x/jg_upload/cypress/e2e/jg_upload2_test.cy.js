@@ -1,34 +1,33 @@
 describe('Upload image to cat. "cy love locks"', () => {
 
-    let galleryName = "cy love locks";
-    //let imageName = "test_coffee.jpg";
-    let imageName = "2015-10-11_00001.jpg";
-    let title = "love it ";
-    let author = "thomas";
+    let galleryName = "cy test";
+    let imageName = "test_coffee.jpg";
+    let title = "coffee number ";
+    let author = "Thomas";
     // let g = "";
     // let g = "";
-	
-  beforeEach(() => {
-	
-	cy.viewport(1000, 1100);
 
-	//--- login ----------------------------------
-	
-	cy.visit('/');
-	cy.get('[name="username"]').click();
-	cy.get('[name="username"]').type(Cypress.env("login_name"));
-	cy.get('[name="password"]').click();
-	cy.get('[name="password"]').type(Cypress.env("login_pass"));
-	cy.get('[name="Submit"]').click();
-	
-	//--- select upload view ----------------------------------
-		
-	cy.visit('/component/joomgallery/userupload');
-	cy.get('h3').first().should('have.text', 'User upload');
+    beforeEach(() => {
 
-	cy.get('.alert-heading').should('not.exist');
+        cy.viewport(1000, 1100);
 
-  })
+        //--- login ----------------------------------
+
+        cy.visit('/');
+        cy.get('[name="username"]').click();
+        cy.get('[name="username"]').type(Cypress.env("login_name"));
+        cy.get('[name="password"]').click();
+        cy.get('[name="password"]').type(Cypress.env("login_pass"));
+        cy.get('[name="Submit"]').click();
+
+        //--- select upload view ----------------------------------
+
+        cy.visit('/component/joomgallery/userupload');
+        cy.get('h3').first().should('have.text', 'User upload');
+
+        cy.get('.alert-heading').should('not.exist');
+
+    })
 
     it('upload file into cat. "cy love locks"', () => {
 
@@ -72,9 +71,9 @@ describe('Upload image to cat. "cy love locks"', () => {
 //        cy.get('h2 > button.collapsed').click();
         cy.get('td').contains('Maximum script limit:').should('exist');
 
-        //--- upload file (name) ----------------------------------
+        //--- drag and drop file (name) ----------------------------------
 
-        cy.log('--- drag and drop file');
+        cy.log('--- drag and drop file: ' + imageName);
         cy.get('.uppy-Dashboard-AddFiles-list')
             .selectFile('cypress/fixtures/images/' + imageName, {action: 'drag-drop'});
 

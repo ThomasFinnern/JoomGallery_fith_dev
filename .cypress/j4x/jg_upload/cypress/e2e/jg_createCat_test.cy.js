@@ -1,6 +1,8 @@
 describe('Create category', () => {
-	
-  beforeEach(() => {
+
+	let galleryName = "cy test";
+
+	beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
 
@@ -33,7 +35,7 @@ describe('Create category', () => {
 	
 	//--- change title and alias ----------------------------------
 		
-	cy.get('[name="jform[title]"]').type("cypress category temp");
+	cy.get('[name="jform[title]"]').type(galleryName);
 	// cy.get('[name="jform[alias]"]').type(""); // prevent double alias
 	cy.get('[name="jform[alias]"]').clear(); // prevent double alias
 	
@@ -48,14 +50,21 @@ describe('Create category', () => {
 	cy.get('.alert-message').eq(1).should('have.text', 'Item successfully saved.');
     cy.get('.alert-message').contains('Item successfully saved.');
 
-	cy.get('[name="jform[title]"]').should('have.value', 'cypress category temp');
+	cy.get('[name="jform[title]"]').should('have.value', galleryName);
 		
 	//--- cancel to categories view ----------------------------------
 		
 	cy.get('[data-submit-task="usercategory.cancel"]').click();
 	cy.get('h3').first().should('have.text', 'User categories');
-	
 
+	  //--- select show all ----------------------------------
+
+	  cy.get('select#list_limit').select('All');
+
+	  //--- check gallery is created ----------------------------------
+
+	  cy.log('--- check gallery is created');
+	  cy.get('a').contains(galleryName).should('exist');
   })
   
 })

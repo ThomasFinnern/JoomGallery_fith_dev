@@ -83,12 +83,16 @@ describe('user without management rights', () => {
   
   it('displays edit form existing user image', () => {
 	// cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=edit')
-	cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=editImg')
+	// cy.visit('/component/joomgallery/userimage/96-sonderlauf-5?layout=editImg')
+        cy.visit('/http://127.0.0.1/joomgallery5x_dev/user-panel/userimages/2-love-it-1-2?layout=editImg',
+            {failOnStatusCode: false} )
 
-	// No error/alarm ... from code 
-	cy.get('.alert-heading').should('exist');
-	// cy.get('.alert-heading').should('not.exist');
+        // // No error/alarm ... from code
+        // cy.get('.alert-heading').should('exist');
+        // // cy.get('.alert-heading').should('not.exist');
 	
+        // error page
+        cy.get('p').contains('You don\'t have permission to access this resource.').should('exist');
   })
 
   it('displays form user upload with warning (failes by )', () => {

@@ -1,6 +1,8 @@
 describe('Delete category love locks', () => {
-	
-  beforeEach(() => {
+
+	let galleryName = "cy love locks";
+
+	beforeEach(() => {
 	
 	cy.viewport(1000, 1100);
 
@@ -19,7 +21,7 @@ describe('Delete category love locks', () => {
 	cy.get('h3').first().should('have.text', 'User categories');
 
 	// category cy lovelock exists
-	cy.get('a').contains('cy love locks');
+	cy.get('a').contains(galleryName);
 
   })
 
@@ -28,18 +30,24 @@ describe('Delete category love locks', () => {
 	//--- delete category ----------------------------------
 		
 	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains('cy love locks')
+	cy.get('a').contains(galleryName)
 		.parent().parent()
 		.find('.icon-trash')
 		.click();
 
 	//--- check category is deleted ----------------------------------
-	
+
 	// success message ... from code  (actually second one)
 	cy.get('.alert-message').eq(1).should('have.text', '1 Items successfully deleted.');
     cy.get('.alert-message').contains('1 Items successfully deleted.');
-		
-	cy.get('a').contains('cy love locks').should('not.exist');;
+
+    //--- select show all ----------------------------------
+
+	cy.get('select#list_limit').select('All');
+
+	  //--- check category is deleted ----------------------------------
+
+	  cy.get('a').contains(galleryName).should('not.exist');;
 
   })
 
