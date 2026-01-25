@@ -21,7 +21,7 @@ beforeEach(() => {
 	cy.get('h3').first().should('have.text', 'User panel');
 
 	cy.get('.alert-heading').should('not.exist');
-});
+})
 
 it('prepare first ', () => {
 	
@@ -42,4 +42,4 @@ it('prepare first ', () => {
 	cy.get('[name="jform[title]"]').type('SaveAs new');
 	cy.get('#adminForm button[data-submit-task="usercategory.saveAndClose"]').click();
 	cy.get('#categoryList button[data-item-id="cb3"] span.icon-trash').click();
-});
+})
