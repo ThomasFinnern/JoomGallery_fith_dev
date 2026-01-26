@@ -33,26 +33,27 @@ describe('edit category by icon ', () => {
 	// category should exist
 	cy.get('a').contains(galleryName).should('exist');;
 
-	//--- click on row category icon ----------------------------------
-		
-	// Category name then find next edit icon button in row 
-	// go parent up to tr (row) , then siblings find child with class '.icon-edit'
-	cy.get('a').contains(galleryName)
-		.parent().parent()
-		.find('.icon-edit')
-		.click();
-
-	// // works if only one categoriy exist
-	// // when change should be first cy.get('.icon-edit').first().click();
-	// cy.get('.icon-edit').eq(1).click();
-	
   })
 
-  it('fill out a new category', () => {
-	  
-	//--- check category form ----------------------------------
-		
-	cy.get('h3').first().should('have.text', 'User category edit');
+  it('change category name and back', () => {
+
+	  //--- edit category ----------------------------------
+
+	  // click on row category icon
+	  // Category name then find next edit icon button in row 
+	  // go parent up to tr (row) , then siblings find child with class '.icon-edit'
+	  cy.get('a').contains(galleryName)
+		  .parent().parent()
+		  .find('.icon-edit')
+		  .click();
+
+	  // // works if only one catagory exist
+	  // // when change should be first cy.get('.icon-edit').first().click();
+	  // cy.get('.icon-edit').eq(1).click();
+
+	  //--- check category form ----------------------------------
+
+	  cy.get('h3').first().should('have.text', 'User category edit');
 	
 	// test if matching
 	cy.get('[name="jform[title]"]').should('have.value', galleryName);
@@ -89,7 +90,7 @@ describe('edit category by icon ', () => {
 		.find('.icon-edit')
 		.click();
 
-	// // works if only one categoriy exist
+	// // works if only one catagory exist
 	// // when change should be first cy.get('.icon-edit').first().click();
 	// cy.get('.icon-edit').eq(1).click();
 	
