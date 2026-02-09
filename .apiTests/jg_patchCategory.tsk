@@ -1,6 +1,7 @@
 task:patch
-/baseUrl="http://127.0.0.1/joomla5x/api/index.php"
-// /baseUrl="http://127.0.0.1/joomgallery5x_dev/api/index.php"
+// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrl="http://127.0.0.1/joomgallery5x_dev/api/index.php"
+// /baseUrl="http://127.0.0.1/joomla5x/api/index.php"
 /apiPath="v1/joomgallery/categories/5"
 /joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomla5x.txt"
 // /joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomgallery5x_dev.txt"
