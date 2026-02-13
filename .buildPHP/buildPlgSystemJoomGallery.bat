@@ -51,8 +51,8 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../joomGallery_fith_dev/.buildPHP/build_mainMerge.tsk %OptionFile%
-"%ExePath%php.exe" buildExtensionCmd.php -f ../../joomGallery_fith_dev/.buildPHP/build_mainMerge.tsk %OptionFile%
+echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../joomGallery_fith_dev/.buildPHP/buildPlgSystemJoomGallery.tsk %OptionFile%
+"%ExePath%php.exe" buildExtensionCmd.php -f ../../joomGallery_fith_dev/.buildPHP/buildPlgSystemJoomGallery.tsk %OptionFile%
 popd
 
 GOTO :EOF

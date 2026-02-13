@@ -3,9 +3,9 @@ task:buildExtension
 /srcRoot="../../JoomGallery_fith\plugins\console\joomconsole"
    // /isNoRecursion=true
 /buildDir="../../joomGallery_fith_dev/.packages"
-/name=joomconsole
-/extension=plg_joomconsole
-// joomgallery specific
+/name=plg_joomconsole
+/extension=plg_console_joomconsole
+	// joomgallery specific
 /isDoNotUpdateCreationDate=true
 /isCollectPluginsModule=true
 /callerProjectId=JG
