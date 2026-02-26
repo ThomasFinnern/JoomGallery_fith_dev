@@ -7,11 +7,11 @@ task:get
 // /apiPath="v1/joomgallery/image/3"
 // /apiPath="v1/joomgallery/image/4"
 /apiPath="v1/joomgallery/images/5"
-// /httpFile="d:\Entwickl\2025\_gitHub\apiByCurlHtml\curl_tsk_files\galleriesGet.http"
+// /httpFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\curl_tsk_files\galleriesGet.http"
 // joomla token should not be in *.tsk file when using git published
 // /joomlaToken="..."
-/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomla5x.txt"
-// /responseFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getCategory_4.json"
-// /responseFile="d:\Entwickl\2025\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getImage.json"
+/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+// /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getCategory_4.json"
+// /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getImage.json"
 /responseFile=""
 
