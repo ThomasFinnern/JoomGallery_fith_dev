@@ -11,4 +11,4 @@ task:get
     // standard: /accept="application/vnd.api+json"
     // standard: /contentType="application/json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getConfigs.json"
-/responseFile=""
+/isCreateAutoResponseFile=true

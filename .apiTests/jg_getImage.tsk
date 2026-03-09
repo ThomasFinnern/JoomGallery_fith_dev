@@ -13,5 +13,5 @@ task:get
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getCategory_4.json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getImage.json"
-/responseFile=""
+/isCreateAutoResponseFile=true
 

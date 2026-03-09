@@ -5,5 +5,5 @@ task:get
 /apiPath="v1/joomgallery/version"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getVersion.json"
-/responseFile=""
+/isCreateAutoResponseFile=true
 

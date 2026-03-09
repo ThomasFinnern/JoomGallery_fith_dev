@@ -7,4 +7,4 @@ task:get
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
     // joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_dev.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getConfigs_1.json"
-/responseFile=""
+/isCreateAutoResponseFile=true

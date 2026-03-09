@@ -5,7 +5,7 @@ task:get
 /apiPath="v1/config/application"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/j!_getConfigAll.json"
-/responseFile=""
+/isCreateAutoResponseFile=true
 /page_offset="0"
 /page_limit="200"
 

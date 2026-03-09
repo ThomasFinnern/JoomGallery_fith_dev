@@ -19,5 +19,5 @@ task:delete
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_deleteCategory_2.json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_deleteCategory_3.json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_deleteCategory_10.json"
-/responseFile=""
+/isCreateAutoResponseFile=true
 

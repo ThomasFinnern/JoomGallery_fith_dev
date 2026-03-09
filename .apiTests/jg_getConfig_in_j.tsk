@@ -7,7 +7,7 @@ task:get
     // joomla token should not be in *.tsk file when using git published
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getConfigs_1.json"
-/responseFile=""
+/isCreateAutoResponseFile=true
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getConfigs_2.json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getConfigs_3.json"
 
