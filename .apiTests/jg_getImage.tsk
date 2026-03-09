@@ -10,7 +10,8 @@ task:get
     // /httpFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\curl_tsk_files\galleriesGet.http"
     // joomla token should not be in *.tsk file when using git published
     // /joomlaToken="..."
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+    // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_dev.txt"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests/jg_getCategory_4.json"
     // /responseFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\jg_getImage.json"
 /isCreateAutoResponseFile=true
