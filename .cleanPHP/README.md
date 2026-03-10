@@ -13,7 +13,7 @@ The entry point to this kind of tasks is src\doFileTasksCmd.php there.
 It uses a configuration file (*.tsk) to assign all the needed variables
 
 For example 
-```php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.buildPHP/updateAll_fileHeaders_userPanel_site.tsk``` 
+```php.exe" doFileTasksCmd.php -f ../../joomGallery_fith_dev/.cleanPHP/updateAll_fileHeaders_userPanel_site.tsk``` 
 
 In this folder 'build*.bat' are the base batch scripts which tell the execution code what to do by commandline options.
 It uses a configuration file (*.tsk) to assign all the needed variables

@@ -2,7 +2,7 @@ task:exchangeAll_actCopyrightYearLines
 /callerProjectId=JG
 // /srcRoot="../../../LangMan4Dev"
 // /srcRoot="../../../joomGallery_fith"
-/srcRoot="./../../JoomGallery_fith_feature_user_panel_upload"
+/srcRoot="./../../JoomGallery_fith.tmp"
 	// /isNoRecursion=true
 /includeExt="php"
 	// excludeExt="ini"

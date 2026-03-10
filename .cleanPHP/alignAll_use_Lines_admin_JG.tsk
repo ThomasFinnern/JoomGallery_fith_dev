@@ -20,4 +20,4 @@ task:alignAll_use_Lines
 /excludeFolderList=vendor
 
 /isWriteListToFile=true
-/listFileName="./../../JoomGallery_fith_dev/.buildPHP/foundFileNamesList_userPanel_admin.txt"
+/listFileName="./../../JoomGallery_fith_dev/.cleanPHP/foundFileNamesList_userPanel_admin.txt"
