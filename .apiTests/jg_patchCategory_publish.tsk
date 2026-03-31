@@ -1,9 +1,9 @@
-task:post
+task:patch
     // /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /baseUrl="http://127.0.0.1/api_6x/api/index.php"
     // /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/apiPath="v1/joomgallery/categories"
-    //     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+/apiPath="v1/joomgallery/categories/6"
+    // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
     // standard: /accept="application/vnd.api+json"
@@ -11,11 +11,8 @@ task:post
     // /responseFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\results/jg_putGallery_result.json"
 /isCreateAutoResponseFile=true
     // /paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_putCategory_DataBare.json"
-	// /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_putCategory_API_05.json"
-/param='"parent_id": 1'
-/param='"title": "API Base"'
-/param='"modified_time": "2026-03-31 10:53:41"'
-
+	// /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_patchCategory_created_by.json"
+/param='"published": 1'
 
     //=== Ideas ========================
 
@@ -25,6 +22,9 @@ task:post
     // /addTime/addDate/addDateTime="modified_time" append may be left out
     // /initNumber="title:42"
     // /incNumber="title:append" append may be left out
+
+
+
 
     ///isSaveResponse
     ///isDoGetAgain

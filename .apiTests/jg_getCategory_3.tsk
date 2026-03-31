@@ -9,7 +9,6 @@ task:get
 /apiPath="v1/joomgallery/categories/3"
     // /apiPath="v1/joomgallery/categories/4"
 	// /apiPath="v1/joomgallery/categories/5"
-/apiPath="v1/joomgallery/categories/5"
     // /apiPath="v1/joomgallery/categories/6"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"

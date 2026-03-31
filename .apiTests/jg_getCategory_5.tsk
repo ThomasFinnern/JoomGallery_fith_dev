@@ -6,7 +6,7 @@ task:get
     // /apiPath="v1/joomgallery/categories/0"
     // /apiPath="v1/joomgallery/categories/1"
     // /apiPath="v1/joomgallery/categories/2"
-/apiPath="v1/joomgallery/categories/3"
+    // /apiPath="v1/joomgallery/categories/3"
     // /apiPath="v1/joomgallery/categories/4"
 	// /apiPath="v1/joomgallery/categories/5"
 /apiPath="v1/joomgallery/categories/5"
