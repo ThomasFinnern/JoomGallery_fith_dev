@@ -10,11 +10,11 @@ task:post
     // /dataFileType="base64"
     // /local-images:/rsgallery2/test.jpg
 	// /param='"image_name": "2016-09-22_00010"'
-/param='"image_name": "2016-09-22_00010.jpg"'
+/param='"image_name": "2016-09-22_00010_B.jpg"'
     // /param='"image_id": 1'
-	// /param='"category_id": 8'
-/param='"category_path": '
-    // /param='"category_name": "By API 03"'
+/param='"category_id": 3'
+/param='"category_path": "api-05"'
+	// /param='"category_name": "API 05"'
 // /param='"override": 1'
 
 
