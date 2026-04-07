@@ -1,4 +1,4 @@
-    //--- 01 put first gallery ------------------------------------------------
+    //--- 01 post first gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"
@@ -6,7 +6,7 @@ task:post
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_01_First.json"
 
-    //--- 02 put gallery ------------------------------------------------
+    //--- 02 post gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"
@@ -14,7 +14,7 @@ task:post
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_02.json"
 
-    //--- 03 put gallery ------------------------------------------------
+    //--- 03 post gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"
@@ -22,7 +22,7 @@ task:post
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_03.json"
 
-    //--- 04 put gallery ------------------------------------------------
+    //--- 04 post gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"
@@ -30,7 +30,7 @@ task:post
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_04.json"
 
-    //--- 05 put gallery ------------------------------------------------
+    //--- 05 post gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"
@@ -38,13 +38,13 @@ task:post
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_05.json"
 
-    //--- 06 put gallery ------------------------------------------------
-    //--- 07 put gallery ------------------------------------------------
-    //--- 08 put gallery ------------------------------------------------
-    //--- 09 put gallery ------------------------------------------------
+    //--- 06 post gallery ------------------------------------------------
+    //--- 07 post gallery ------------------------------------------------
+    //--- 08 post gallery ------------------------------------------------
+    //--- 09 post gallery ------------------------------------------------
 
 
-    //--- xx put last gallery ------------------------------------------------
+    //--- xx post last gallery ------------------------------------------------
 task:post
 /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 /apiPath="v1/joomgallery/categories"

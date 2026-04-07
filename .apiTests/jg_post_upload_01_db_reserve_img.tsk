@@ -1,17 +1,46 @@
 task:post
 /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/apiPath="v1/joom_gallery/db_reserve_image_id"
+/apiPath="v1/joomgallery/db_reserve_image_id"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
 /isCreateAutoResponseFile=true
-	// /paramsFile="d:\Entwickl\2026\_gitHub\joom_gallery_J4_Dev\.apiTests\dataFiles\rsg2_postImage_01.json"
-    // /dataFileType="base64"
-    // /local-images:/joom_gallery/test.jpg
 	// /param='"override": 1'
+	// /param='"modified_time": "2026-03-30 08:03:44"'
+	
+	//--- real example ----------------------------------------------
+	// /param='"catid": 7'
+	// /param='"description": "<p>Empty brown Italian coffee cup</p>"'
+	// /param='"title": "fith_01-1"'
+	
+	// /param='"filename": "fith-01-1_1_20260406_1731557800.jpg"'
+	// /param='"filesystem": "local-images"'
+	
+	// /param='"params": "{\"jg_dynamic_watermark\":\"-1"}\"'
+	// /param='"modified_time": "2026-04-06 15:31:44"'
+	// /param='"date": "2014-12-28 14:43:11"'
+	// /param='"imgmetadata": "{}"'
+	
+	// /param='"approved": 1'
+	// /param='"access": 1'
+	// /param='"published": 1'
+
+	// /param='"author": "Thomas API"'
+
+
+/param='"catid": 8'
+/param='"description": "<p>Brown macchiato glas with nice figure in cream</p>"'
 /param='"title": "API coffee macchiato 2014-12-29_00005"'
-/param='"gallery_id": 16'
-/param='"description": "Brown macchiato glas with nice figure in cream"'
-/param='"modified_time": "2026-03-30 08:03:44"'
+
+/param='"filename": "API coffee macchiato.jpg"'
+/param='"filesystem": "local-images"'
+
+/param='"params": "{\"jg_dynamic_watermark\":\"-1"}\"'
+/param='"modified_time": "2026-04-01 10:53:41"'
+/param='"date": "2014-12-28 14:43:11"'
+
+/param='"approved": 1'
+/param='"access": 1'
 /param='"published": 1'
-/param='"name": "2014-12-29_00005.jpg"'
+
+/param='"author": "Thomas API"'
 

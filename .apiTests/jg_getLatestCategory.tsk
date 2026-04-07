@@ -1,9 +1,8 @@
 task:get
-// ! not post: wrong name used for '00' alignment before upload sequent 1.. !
 /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-
-// ToDo: improve path and function. Ses also rsg2_getLatestGallery.tsk
-/apiPath="v1/joomgallery/categories"
+/apiPath="v1/joomgallery/latestcategory"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
 /isCreateAutoResponseFile=true
+
+

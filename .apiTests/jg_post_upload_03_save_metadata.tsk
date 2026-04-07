@@ -1,0 +1,12 @@
+task:patch
+/baseUrl="http://127.0.0.1/api_6x/api/index.php"
+/apiPath="v1/joomgallery/save_matadata"
+    // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
+/isCreateAutoResponseFile=true
+    // /local-images:/rsgallery2/test.jpg
+    // /param='"image_name": "2016-09-22_00010"'
+/param='"image_id": 4'
+	// /param='"category_id": 5'
+    // /param='"override": 1'
+

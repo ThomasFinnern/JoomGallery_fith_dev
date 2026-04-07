@@ -8,10 +8,10 @@ task:post
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
     // standard: /accept="application/vnd.api+json"
     // standard: /contentType="application/json"
-    // /responseFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\results/jg_putGallery_result.json"
+    // /responseFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\results/jg_postGallery_result.json"
 /isCreateAutoResponseFile=true
-    // /paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_putCategory_DataBare.json"
-/paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_putImage_API_06.json"
+    // /paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_postCategory_DataBare.json"
+/paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postImage_API_06.json"
     //=== Ideas ========================
 
     // following will be applied when the file is read
