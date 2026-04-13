@@ -3,8 +3,8 @@ task:buildExtension
 /srcRoot="../../JoomGallery_fith\plugins\console\joomconsole"
    // /isNoRecursion=true
 /buildDir="../../joomGallery_fith_dev/.packages"
-/name=plg_joomconsole
-/extension=plg_console_joomconsole
+/name=plg_console_joomconsole
+// /extension=plg_console_joomconsole
 	// joomgallery specific
 /isDoNotUpdateCreationDate=true
 /isCollectPluginsModule=true
