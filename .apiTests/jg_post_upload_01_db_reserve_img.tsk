@@ -31,7 +31,8 @@ task:post
 /param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'
 /param='"title": "API coffee macchiato 2014-12-29_00005"'
 
-/param='"filename": "API coffee macchiato.jpg"'
+/param='"filename": "API coffee macchiato"'
+/param='"file_extension": "jpg"'
 /param='"filesystem": "local-images"'
 
 // /param='"params": "{\"jg_dynamic_watermark\":\"-1\"}\"'
