@@ -1,5 +1,5 @@
 @ECHO OFF
-REM build_fix.bat
+REM jg_postCategory_07.bat
 REM
 CLS
 

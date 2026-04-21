@@ -31,17 +31,18 @@ task:post
 /param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'
 /param='"title": "API coffee macchiato 2014-12-29_00005"'
 
-/param='"filename": "API coffee macchiato"'
-/param='"file_extension": "jpg"'
-/param='"filesystem": "local-images"'
+/param='"filename": "API coffee macchiato"'	// Manuel: name.jpg or name and extension seperately
+/param='"file_extension": "jpg"'			// 
+/param='"filesystem": "local-images"'  		// Manuel: ? interanlly preset ?
 
 // /param='"params": "{\"jg_dynamic_watermark\":\"-1\"}\"'
-/param='"modified_time": "2026-04-01 10:53:41"'
+/param='"modified_time": "2026-04-01 10:53:41"' // Manuel: why not set internally ? complaining when not set external
 /param='"date": "2014-12-28 14:43:11"'
 
-/param='"approved": 1'
-/param='"access": 1'
-/param='"published": 1'
+/param='"approved": 1'	// manuel: ? set internally by config ?
+/param='"access": 1'  	// public:1, guest:5, registered:2, special:3, super user:6
+/param='"published": 1'	// no:0, Yes:1		
+	// /param='"featured": 1'	// no:0, Yes:1		
 
 /param='"author": "Thomas API"'
 

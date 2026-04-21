@@ -1,5 +1,5 @@
 @ECHO OFF
-REM build_fix.bat
+REM jg_getImage.bat
 REM
 CLS
 
