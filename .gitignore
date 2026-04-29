@@ -13,6 +13,7 @@
 .apiTests/curl_http_files/
 .apiTests/results/
 .apiTests/*.json
+.apiTests/*.jsonoutside.txt
 
 
 # org and temp files

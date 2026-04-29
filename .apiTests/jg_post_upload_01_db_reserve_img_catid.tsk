@@ -1,6 +1,6 @@
 task:post
+/apiPath="v1/joomgallery/db_reserve_image_id/3"
 /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/apiPath="v1/joomgallery/db_reserve_image_id"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
 /isCreateAutoResponseFile=true
@@ -27,7 +27,7 @@ task:post
 	// /param='"author": "Thomas API"'
 
 
-/param='"catid": 3'
+	// /param='"catid": 3'
 /param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'
 /param='"title": "API coffee macchiato 2014-12-29_00005"'
 
