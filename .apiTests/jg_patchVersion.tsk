@@ -1,9 +1,8 @@
-task:get
+task:patch
+/apiPath="v1/joomgallery/version"
 /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-    // /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/apiPath="v1/config/application"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
 /isCreateAutoResponseFile=true
-/urlQueryParam='page[offset]=90'
-/urlQueryParam='page[limit]=30'
+/param='"version": "4.3.1.2"'
+/param='"creationDate": "2026-01-01"'
