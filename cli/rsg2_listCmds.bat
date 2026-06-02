@@ -1,5 +1,5 @@
 @ECHO OFF
-REM j!_user_list.bat
+REM rsg2_listCmds.bat
 REM
 CLS
 
@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" joomla.php user:list %1
-"%ExePath%php.exe" joomla.php user:list %1
+echo --- "%ExePath%php.exe" joomla.php list rsgallery2 %1
+"%ExePath%php.exe" joomla.php list rsgallery2 %1
 
 GOTO :EOF
 
@@ -33,3 +33,4 @@ REM Adds given argument to the already known command arguments
     Set CmdArgs=%CmdArgs% %NextArg%
     ECHO  '%NextArg%'
 GOTO :EOF
+
