@@ -7,7 +7,9 @@ WIP
 
 ### 1) post (header)
 
-    % ... %
+    Upload Length
+    Upload-Metadata
+      filename, filetype, name, relativepath, type
 
 ### 2) post (Prepare temp file and Meta data)
 
@@ -63,7 +65,7 @@ Second or nth part of the image upload when image is big enough.
 
 **==> ImageController.ajaxsave:**
 
-* Formcoontroller save()
+* Formcontroller save()
     * context: com_joomgallery.edit.com_joomgallery.image.ajaxsave
     * task:ajaxsave
     * preprocessSaveData from 
@@ -91,7 +93,12 @@ Second or nth part of the image upload when image is big enough.
 * ==> image model->save
 ?? depth
     * byAjax = true
-    * importPlugins
+    * importPlugin
+
+
+
+
+
     * uploadservice: tus from $data['uploader']
     * upload_multiple: yes from $data['multiple']
     * uploader => .../Service/uploader/TUSUploader.php
@@ -169,5 +176,26 @@ Am besten schaust du, dass du die gesamte execute() Methode vom Backend auch im 
 Kontrolliere, dass die Kommunikation nach dem klicken des Upload Buttons wie folgt aussieht:
 
 ![local ToDo: Replace](Post.01.checkData.png)
+
+
+# Uploader interface
+
+* checkError
+  - Analyses an error code and returns its text
+* retrieveImage
+  - check upload, check user upload limit, create filename, onJoomBeforeUpload
+* overrideData
+  - Override form data with image metadata
+* createImage
+  - create imagetypes, upload imagetypes to storage, onJoomAfterUpload
+* rollback
+* isImgUploaded
+  - Detect if there is an image uploaded
+* deleteTmp
+  - Delete all temporary created files which were created during upload
+
+2026.06.01
+Create image DB item is not separate here
+
 
 
