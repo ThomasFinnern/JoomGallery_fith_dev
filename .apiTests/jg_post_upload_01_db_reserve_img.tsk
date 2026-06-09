@@ -31,9 +31,8 @@ task:post
 /param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'
 /param='"title": "API coffee macchiato 2014-12-29_00005"'
 
-// Manuel: name.jpg or name and extension seperately
-/param='"filename": "API coffee macchiato"'	
-/param='"file_extension": "jpg"'			
+/param='"filename": "API coffee macchiato.jpg"'	
+	// /param='"file_extension": "jpg"'			
 // Manuel: ? interanlly preset ? 
 /param='"filesystem": "local-images"'  		
 
