@@ -1,6 +1,7 @@
     //--- 01 post first gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
@@ -8,15 +9,18 @@ task:post
 
     //--- 02 post gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+	// /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
+/joomlaTokenAuto
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_02.json"
 
     //--- 03 post gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
@@ -24,7 +28,8 @@ task:post
 
     //--- 04 post gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
@@ -32,7 +37,8 @@ task:post
 
     //--- 05 post gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
@@ -46,7 +52,16 @@ task:post
 
     //--- xx post last gallery ------------------------------------------------
 task:post
-/baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
