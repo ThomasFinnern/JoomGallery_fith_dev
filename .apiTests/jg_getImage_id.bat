@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_getImages_id.bat
+REM jg_getImage_id.bat
 REM
 CLS
 
@@ -31,8 +31,8 @@ IF NOT A%1==A (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImages_id.tsk %IMAGE_ID%
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImages_id.tsk %IMAGE_ID%
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_id.tsk %IMAGE_ID%
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_id.tsk %IMAGE_ID%
 
 GOTO :EOF
 
