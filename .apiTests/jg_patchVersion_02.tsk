@@ -1,7 +1,7 @@
 task:patch
 /apiPath="v1/joomgallery/version"
 	// /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
 	// /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
 /joomlaTokenAuto

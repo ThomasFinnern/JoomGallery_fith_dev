@@ -1,6 +1,6 @@
 task:get
 	// /baseUrl="http://127.0.0.1/api_6x/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
     // /baseUrl="http://127.0.0.1/api_6x/api/index.php"
 /apiPath="v1//users?filter[search]=admin"
     // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"

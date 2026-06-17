@@ -1,71 +1,26 @@
     //--- 01 post first gallery ------------------------------------------------
 task:post
 	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
+/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
 /apiPath="v1/joomgallery/categories"
 /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_01_First.json"
 
     //--- 02 post gallery ------------------------------------------------
-task:post
-	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/apiPath="v1/joomgallery/categories"
 	// /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
 /joomlaTokenAuto
-/isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_02.json"
-
     //--- 03 post gallery ------------------------------------------------
-task:post
-	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/apiPath="v1/joomgallery/categories"
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
-/isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_03.json"
-
     //--- 04 post gallery ------------------------------------------------
-task:post
-	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/apiPath="v1/joomgallery/categories"
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
-/isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_04.json"
-
     //--- 05 post gallery ------------------------------------------------
-task:post
-	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/apiPath="v1/joomgallery/categories"
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
-/isCreateAutoResponseFile=true
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_05.json"
-
     //--- 06 post gallery ------------------------------------------------
     //--- 07 post gallery ------------------------------------------------
     //--- 08 post gallery ------------------------------------------------
     //--- 09 post gallery ------------------------------------------------
-
-
     //--- xx post last gallery ------------------------------------------------
-task:post
-	// /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\baseUrls.txt"	
-/apiPath="v1/joomgallery/categories"
-/joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomgallery5x_api.txt"
-/isCreateAutoResponseFile=true
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
 /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_xx_Last.json"
-
-
-
