@@ -1,0 +1,12 @@
+task:buildExtension
+/type=component
+/srcRoot="../../JoomGallery_fith_api"
+   // /isNoRecursion=true
+/buildDir="../../joomGallery_fith_dev/.packages"
+/name=com_joomgallery
+// /extension=com_joomgallery
+// joomgallery specific
+/isDoNotUpdateCreationDate=true
+/isCollectPluginsModule=true
+/prefixZipName=api01
+/callerProjectId=JG
