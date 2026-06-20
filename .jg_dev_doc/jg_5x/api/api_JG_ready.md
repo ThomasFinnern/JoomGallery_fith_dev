@@ -1,6 +1,7 @@
 ## Joomgallery API (ready parts)
 
-#### JG installed version
+------------------------------------------------------------------------------------------
+### JG installed version (v1/joomgallery/version)
 
 <details>
  <summary><code>GET</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
@@ -25,20 +26,15 @@
 
 > ```http
 > ###
-> PATCH http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
+> GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
 > Accept: application/vnd.api+json
 > Content-Type: application/json
 > X-Joomla-Token: 
-> 
-> {
->     "version": "4.3.1.2",
->     "creationDate": "2026-01-01"
-> }
 > ```
 </details>
 
 <details>
- <summary><code>PATCH</code> <code><b>/</b></code> <code>(writes 'version' number and 'creationDate' into manifest data of JG component)</code></summary>
+ <summary><code>PATCH joomgallery/version</code> <code><b>/</b></code> <code>(writes 'version' number and 'creationDate' into manifest data of JG component)</code></summary>
 
 ##### Parameters
 
@@ -58,6 +54,44 @@
 
 > ```javascript
 > curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version" -d "{\"version\":\"4.3.1.2\",\"creationDate\":\"2026-01-01\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> ```
+
+##### Example http
+
+> ```http
+> ###
+> PATCH http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
+> Accept: application/vnd.api+json
+> Content-Type: application/json
+> X-Joomla-Token: 
+> 
+> {
+>     "version": "4.3.1.2",
+>     "creationDate": "2026-01-01"
+> }
+> ```
+</details>
+
+------------------------------------------------------------------------------------------
+### JG config joomla part (v1/joomgallery/config_in_j : joomla standard parameter)
+
+<details>
+ <summary><code>GET v1/joomgallery/config_in_j</code> <code><b>/</b></code> <code>(gets config part in saved in joomla extension table)</code></summary>
+
+##### Parameters
+
+> None
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json;charset=UTF-8`        | ```json { "inheritance_config": "default", "save_history": "0", "history_limit": 5 }``` |
+
+##### Example CURL
+
+> ```batch
+> curl -s --show-error  -X GET "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/config_in_j" -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
