@@ -1,6 +1,12 @@
+
+<center>JoomGallery API Documentation</center>
+<center>Version 2026.06.22</center><br>
+
 ## Joomgallery API (ready parts)
 
-------------------------------------------------------------------------------------------
+[//]: # (!INCLUDE "tableOfContent.md")
+[//]: # (---)
+
 ### JG installed version (v1/joomgallery/version)
 
 <details>
@@ -29,7 +35,7 @@
 > GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
 > Accept: application/vnd.api+json
 > Content-Type: application/json
-> X-Joomla-Token: 
+> X-Joomla-Token: ...
 > ```
 </details>
 
@@ -72,11 +78,11 @@
 > ```
 </details>
 
-------------------------------------------------------------------------------------------
+---
 ### JG config joomla part (v1/joomgallery/config_in_j : joomla standard parameter)
 
 <details>
- <summary><code>GET v1/joomgallery/config_in_j</code> <code><b>/</b></code> <code>(gets config part in saved in joomla extension table)</code></summary>
+<summary><code>GET v1/joomgallery/config_in_j</code> <code><b>/</b></code> <code>(gets config part by joomla standard. Not used by JG as such)</code></summary>
 
 ##### Parameters
 
@@ -104,5 +110,27 @@
 > X-Joomla-Token: 
 > ```
 </details>
+---
+### JG config JoomGallery part (v1/joomgallery/configs: JG table)
+JG keeps multiple config sets. Therefore the route begins with "v1/joomgallery/configs/**set number**". Attention: Please note the 's' in .../config**s**/...   
+
+<details>
+ <summary><code>GET v1/joomgallery/config_in_j</code> <code><b>/</b></code> <code>(gets JG configuration variables kept in JGs own table)</code></summary>
 
 
+</details>
+---
+### JG categories (v1/joomgallery/categories: JG table)
+<details>
+
+
+</details>
+
+---
+### JG images JoomGallery part (v1/joomgallery/images: JG table)
+<details>
+
+
+</details>
+
+---
