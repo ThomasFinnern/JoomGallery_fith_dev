@@ -1,5 +1,5 @@
 task:post
-	/apiPath="v1/joomgallery/configs"
+/apiPath="v1/joomgallery/configs"
     // /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
 	// /baseUrl="http://127.0.0.1/api_6x/api/index.php"
 /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
@@ -12,7 +12,7 @@ task:post
     // standard: /contentType="application/json"
     // /responseFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\results/jg_postConfig_result.json"
 /isCreateAutoResponseFile=true
-/paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_postConfig_DataSecond.json"
+/paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postConfig_DataSecond.json"
     //// Ideas
     ///isSaveResponse
     ///isDoGetAgain
