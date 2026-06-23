@@ -28,4 +28,5 @@
 > Content-Type: application/json
 > X-Joomla-Token: 
 > ```
+
 </details>

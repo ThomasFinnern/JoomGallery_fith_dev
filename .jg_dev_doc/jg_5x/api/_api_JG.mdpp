@@ -9,11 +9,15 @@
 
 !INCLUDE "api_version.md"
 ---
+
 !INCLUDE "api_config_in_j.md"
 ---
+
 !INCLUDE "api_configurations.md"
 ---
+
 !INCLUDE "api_categories_table.md"
 ---
+
 !INCLUDE "api_images_table.md"
 ---

@@ -1,38 +1,41 @@
 <details>
- <summary><code>PATCH joomgallery/version</code> <code><b>/</b></code> <code>(writes 'version' number and 'creationDate' into manifest data of JG component)</code></summary>
+ <summary><code>POST joomgallery/configs</code> <code><b>/</b></code> <code>(creates new configuration with data)</code></summary>
 
 ##### Parameters
 
-> | name      |  type     | data type               | description                                                           |
-> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | version      |  %     | string   | like "4.4.0" or "4.3.0.1" | 
-> | creationDate |  %     | string   | format "yyyy-mm-dd" examplöe "2026-04-01"  |
+> | name                  |  type     | data type    | description                                                           |
+> |-----------------------|-----------|--------------|-----------------------------------------------------------------------|
+> | all config parameters |  %     | Json, string |  | 
 
 
 ##### Responses
 
-> | http code     | content-type                      | response                                                            |
-> |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `200`         | `application/json;charset=UTF-8`        | ```json { ... "version": "4.3.1.2", "creationDate": "2026-01-01" }``` |
+> | http code     | content-type                      | response                                                                                                                   |
+> |---------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+> | `200`         | `application/json;charset=UTF-8`  | ```json {"type": "configs", "id": "2", "attributes": { "id": 1, "asset_id": 105, "title": "Global Configuration", ... }``` |
 
 ##### Example cURL
 
 > ```javascript
-> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version" -d "{\"version\":\"4.3.1.2\",\"creationDate\":\"2026-01-01\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> curl -s --show-error  -X POST "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs" -d "{\"asset_id\":234,\"title\":\"Global Configuration 2\",\"note\":\"\",\"group_id\":1,\"published\":1,\"ordering\":0,\"checked_out\":0, ...}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
 
 > ```http
 > ###
-> PATCH http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
+> POST http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 > Accept: application/vnd.api+json
 > Content-Type: application/json
 > X-Joomla-Token: 
 > 
 > {
->     "version": "4.3.1.2",
->     "creationDate": "2026-01-01"
+>    "asset_id": 234,
+>    "title": "Global Configuration 2",
+>    "note": "",
+>    "group_id": 1,
+>    "published": 1,
+>    ...
 > }
 > ```
 </details>
