@@ -9,7 +9,7 @@
 
 > | http code     | content-type                      | response                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `200`         | `application/json;charset=UTF-8`        | ```json { ... "version": "4.3.1.2", "creationDate": "2026-01-01" }``` |
+> | `200`         | `application/json;charset=UTF-8`  | ```json { ... "version": "4.3.1.2", "creationDate": "2026-01-01" }``` |
 
 ##### Example CURL
 

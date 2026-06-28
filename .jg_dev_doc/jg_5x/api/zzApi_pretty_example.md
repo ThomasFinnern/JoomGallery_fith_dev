@@ -33,7 +33,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X POST -H "Content-Type: application/json" --data @post.json http://localhost:8889/
 > ```
 
@@ -58,7 +58,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X GET -H "Content-Type: application/json" http://localhost:8889/
 > ```
 
@@ -82,7 +82,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X GET -H "Content-Type: application/json" http://localhost:8889/0
 > ```
 
@@ -106,7 +106,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X GET -H "Content-Type: application/json" http://localhost:8889/some-unique-uuid-string
 > ```
 
@@ -129,7 +129,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X GET -H "Content-Type: application/json" http://localhost:8889/proxy-config/default
 > ```
 
@@ -154,7 +154,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X GET -H "Content-Type: application/json" http://localhost:8889/proxy-config/some-unique-uuid-string
 > ```
 
@@ -184,7 +184,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X PUT -H "Content-Type: application/json" --data @put.json http://localhost:8889/0
 > ```
 
@@ -209,7 +209,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X PUT -H "Content-Type: application/json" --data @put.json http://localhost:8889/some-unique-uuid-string
 > ```
 
@@ -232,7 +232,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X PUT -H "Content-Type: application/json" --data @put.json http://localhost:8889/proxy-config/default
 > ```
 
@@ -257,7 +257,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X PUT -H "Content-Type: application/json" --data @put.json http://localhost:8889/proxy-config/some-unique-uuid-string
 > ```
 
@@ -282,7 +282,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X DELETE -H "Content-Type: application/json" http://localhost:8889/
 > ```
 
@@ -306,7 +306,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X DELETE -H "Content-Type: application/json" http://localhost:8889/0
 > ```
 
@@ -332,7 +332,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X DELETE -H "Content-Type: application/json" http://localhost:8889/some-unique-uuid-string
 > ```
 
@@ -357,7 +357,7 @@ https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6#listing-exis
 
 ##### Example cURL
 
-> ```javascript
+> ```shell
 >  curl -X DELETE -H "Content-Type: application/json" http://localhost:8889/proxy-config/some-unique-uuid-string
 > ```
 

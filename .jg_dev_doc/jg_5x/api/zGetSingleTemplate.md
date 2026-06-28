@@ -1,5 +1,5 @@
 <details>
- <summary><code>GET</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
+ <summary><code>GET v1/joomgallery/configs/:id</code> <code><b>/</b></code> <code>(gets selected JG configuration set variables kept in JGs own table)</code></summary>
 
 ##### Parameters
 
@@ -7,24 +7,23 @@
 
 ##### Responses
 
-> | http code     | content-type                      | response                                                            |
-> |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `200`         | `application/json;charset=UTF-8`        | ```json { ... "version": "4.3.1.2", "creationDate": "2026-01-01" }``` |
+> | http code     | content-type                      | response                                                                                                                    |
+> |---------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+> | `200`         | `application/json;charset=UTF-8`        | ```json {"type": "configs", "id": "1", "attributes": { "id": 1, "asset_id": 105, "title": "Global Configuration", ... }``` |
 
 ##### Example CURL
 
 > ```batch
-> curl -s --show-error  -X GET "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version" -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> curl -s --show-error  -X GET "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs/1" -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
 
 > ```http
 > ###
-> GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/version
+> GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs/1
 > Accept: application/vnd.api+json
 > Content-Type: application/json
 > X-Joomla-Token:  ...
 > ```
 </details>
-
