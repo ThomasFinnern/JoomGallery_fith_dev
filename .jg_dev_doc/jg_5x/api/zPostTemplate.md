@@ -1,11 +1,11 @@
 <details>
- <summary><code>POST joomgallery/configs</code> <code><b>/</b></code> <code>(creates new configuration with data)</code></summary>
+ <summary><code>POST v1/joomgallery/configs</code> <code><b>/</b></code> <code>(creates a new configuration with data)</code></summary>
 
 ##### Parameters
 
-> | name                  |  type     | data type    | description                                                           |
-> |-----------------------|-----------|--------------|-----------------------------------------------------------------------|
-> | all config parameters |  %     | Json, string |  | 
+> | name                         |  type     | data type    | description                                                           |
+> |------------------------------|-----------|--------------|-----------------------------------------------------------------------|
+> | all/selection of configuration parameters |  %     | Json, string |  | 
 
 
 ##### Responses

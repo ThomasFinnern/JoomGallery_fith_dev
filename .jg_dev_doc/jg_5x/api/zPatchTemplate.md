@@ -1,5 +1,5 @@
 <details>
- <summary><code>PATCH joomgallery/configs/:id</code> <code><b>/</b></code> <code>(writes parameters into selecte cofigurtion sets</code></summary>
+ <summary><code>PATCH v1/joomgallery/configs/:id</code> <code><b>/</b></code> <code>(writes parameters into selected configuration</code></summary>
 
 ##### Parameters
 
@@ -18,14 +18,14 @@
 ##### Example cURL
 
 > ```shell
-> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/1/configs" -d "{\"\"jg_userspace\":1\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs/1" -d "{\"\"jg_userspace\":1\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
 
 > ```http
 > ###
-> PATCH http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
+> PATCH http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs/1
 > Accept: application/vnd.api+json
 > Content-Type: application/json
 > X-Joomla-Token: 

@@ -1,7 +1,7 @@
 ### JG installed version (v1/joomgallery/version)
 
 <details>
- <summary><code>GET</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
+ <summary><code>GET v1/joomgallery/version</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
 
 ##### Parameters
 
@@ -31,7 +31,7 @@
 </details>
 
 <details>
- <summary><code>PATCH joomgallery/version</code> <code><b>/</b></code> <code>(writes 'version' number and 'creationDate' into manifest data of JG component)</code></summary>
+ <summary><code>PATCH v1/joomgallery/version</code> <code><b>/</b></code> <code>(writes 'version' number and 'creationDate' into manifest data of JG component)</code></summary>
 
 ##### Parameters
 

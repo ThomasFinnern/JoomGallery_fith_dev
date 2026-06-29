@@ -1,5 +1,5 @@
 <details>
- <summary><code>GET</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
+ <summary><code>GET v1/joomgallery/version</code> <code><b>/</b></code> <code>(gets 'version' number and 'creationDate' from manifest data of JG component)</code></summary>
 
 ##### Parameters
 

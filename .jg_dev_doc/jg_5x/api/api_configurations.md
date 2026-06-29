@@ -63,13 +63,13 @@ GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 </details>
 
 <details>
- <summary><code>POST joomgallery/configs</code> <code><b>/</b></code> <code>(creates new configuration set with data)</code></summary>
+ <summary><code>POST v1/joomgallery/configs</code> <code><b>/</b></code> <code>(creates a new configuration set with data)</code></summary>
 
 ##### Parameters
 
-> | name                  |  type     | data type    | description                                                           |
-> |-----------------------|-----------|--------------|-----------------------------------------------------------------------|
-> | all config parameters |  %     | Json, string |  | 
+> | name                                      |  type     | data type    | description                                                           |
+> |-------------------------------------------|-----------|--------------|-----------------------------------------------------------------------|
+> | all/selection of configuration parameters |  %     | Json, string |  | 
 
 
 ##### Responses
@@ -102,11 +102,10 @@ GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 >    ...
 > }
 > ```
-
 </details>
 
 <details>
- <summary><code>PATCH joomgallery/configs/:id</code> <code><b>/</b></code> <code>(writes parameters into selected configuration set)</code></summary>
+ <summary><code>PATCH v1/joomgallery/configs/:id</code> <code><b>/</b></code> <code>(writes parameters into selected configuration set)</code></summary>
 
 ##### Parameters
 
@@ -125,7 +124,7 @@ GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 ##### Example cURL
 
 > ```shell
-> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/1/configs" -d "{\"\"jg_userspace\":1\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs/1" -d "{\"\"jg_userspace\":1\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
@@ -138,13 +137,13 @@ GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 > X-Joomla-Token: 
 > 
 > {
->     "jg_userspace": 1,
+>    "jg_userspace": 1,
 > }
 > ```
 </details>
 
 <details>
- <summary><code>DELETE joomgallery/configs/:id</code> <code><b>/</b></code> <code>(deletes selected JG configuration set)</code></summary>
+ <summary><code>DELETE v1/joomgallery/configs/:id</code> <code><b>/</b></code> <code>(deletes selected JG configuration set)</code></summary>
 
 ##### Parameters
 
@@ -170,3 +169,4 @@ GET http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/configs
 > X-Joomla-Token: 
 > ```
 </details>
+
