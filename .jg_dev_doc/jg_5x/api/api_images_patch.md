@@ -3,7 +3,7 @@ Actually it is not working 2026.06.29
 
 ========================================================================================================================================================
 <details>
- <summary><code>PATCH v1/joomgallery/images/:id</code> <code><b>/</b></code> <code>(writes parameters into selected image</code></summary>
+ <summary><code>PATCH v1/joomgallery/images/:id</code> <code><b>/</b></code> <code>(writes parameters into selected image)</code></summary>
 
 ##### Parameters
 
@@ -20,7 +20,7 @@ Actually it is not working 2026.06.29
 ##### Example cURL
 
 > ```shell
-> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/images/1" -d "{\"title\":\"API cat 07 patched\",\"alias\":\"\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
+> curl -s --show-error  -X PATCH "http://127.0.0.1/joomgallery5x_dev/api/index.php/v1/joomgallery/images/1" -d "{\"title\":\"API cat 07 patched\"}"  -H "Content-Type: application/json" -H "X-Joomla-Token:  ..."
 > ```
 
 ##### Example http
@@ -34,7 +34,6 @@ Actually it is not working 2026.06.29
 >
 > {
 >     "title": "API cat 07 patched",
->     "alias": "",
 > }
 > ```
 </details>

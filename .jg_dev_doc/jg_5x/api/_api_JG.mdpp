@@ -21,3 +21,8 @@
 
 !INCLUDE "api_images_table.md"
 ---
+
+!INCLUDE "api_latest_category.md"
+---
+
+!INCLUDE "api_upload_image.md"

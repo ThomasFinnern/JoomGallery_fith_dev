@@ -3,7 +3,7 @@ Actually it is not working 2026.06.29
 
 ========================================================================================================================================================
 <details>
- <summary><code>POST v1/joomgallery/images</code> <code><b>/</b></code> <code>(creates a new image table item with data. It does not create any image.)</code></summary>
+ <summary><code>POST v1/joomgallery/images</code> <code><b>/</b></code> <code>(creates a new image table item with data. It does not create any image though)</code></summary>
 
 
 ##### Parameters

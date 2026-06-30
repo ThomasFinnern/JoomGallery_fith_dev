@@ -15,7 +15,7 @@ task:patch
 	// /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_patchImage_title.json"
 
 /param='"title": "API cat patched"'
-/param='"alias": ""'
+	// /param='"alias": ""'
 
     //=== Ideas ========================
 

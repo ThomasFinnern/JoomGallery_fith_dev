@@ -7,6 +7,10 @@ The data integrity between category and image must be ensured by the data from t
 Attention: The list of all images show less parameters per image than the get of a single image. 
 The single image show all table parameters 
 
+Attention: Changing the alias of an image will lead to move the image file which may not be successful. So it should be avoided
+
+Attention: Deleting an image does delete the table item but not the images 'behind' (original, display, thumb, ...) 
+
 <details>
  <summary><code>GET v1/joomgallery/images</code> <code><b>/</b></code> <code>(gets 'images' number and 'creationDate' from manifest data of JG component)</code></summary>
 
@@ -66,7 +70,6 @@ The single image show all table parameters
 > ```
 </details>
 
-========================================================================================================================================================
 <details>
  <summary><code>DELETE v1/joomgallery/images/:id</code> <code><b>/</b></code> <code>(deletes selected image)</code></summary>
 
