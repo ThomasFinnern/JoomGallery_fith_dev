@@ -1,5 +1,5 @@
 @ECHO OFF
-REM j!_getConfig_debug.bat
+REM j!_patch_file_01_coffee.bat
 REM
 CLS
 
@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_getConfig_debug.tsk %1
-"%ExePath%php.exe" ..\..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_getConfig_debug.tsk %1
+echo --- "%ExePath%php.exe" ..\..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_patch_file_01_coffee.tsk %1
+"%ExePath%php.exe" ..\..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_patch_file_01_coffee.tsk %1
 
 GOTO :EOF
 
