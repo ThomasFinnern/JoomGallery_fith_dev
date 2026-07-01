@@ -1,0 +1,37 @@
+task:post
+/apiPath="v1/joomgallery/upload_image_file"
+    // /baseUrl="http://127.0.0.1/joomgallery5x_api/api/index.php"
+/baseUrl="http://127.0.0.1/api_6x/api/index.php"
+	// /baseUrlFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\_baseUrls.txt"	
+    // /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_joomla5x.txt"
+	// /joomlaTokenFile="d:\Entwickl\2026\_gitHub\xTokenFiles\token_api_6x.txt"
+/joomlaTokenAuto
+/isCreateAutoResponseFile=true
+	// /param='"path": "sampledata/next_dir/test.jpg"'
+/dataFile="d:\FithBilderRsgallery\Coffee.small\2016-09-22_00010.jpg"
+/param='"catid": 3'
+
+	// /param='"uploader": "API"'
+/param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'
+/param='"title": "API coffee macchiato 2014-12-29_00005"'
+
+// Manuel: name.jpg or name and extension seperately
+/param='"filename": "API coffee macchiato.jpg"'	
+/param='"file_extension": "jpg"'			
+
+	// @Manuel: ? is it standard ?internally preset ? 
+	// /param='"filesystem": "local-images"'  		
+
+// @Manuel: why not set internally ? complaining when not set external
+/param='"modified_time": "2026-04-01 10:53:41"' 
+/param='"date": "2014-12-28 14:43:11"'
+	// /param='"params": "{\"jg_dynamic_watermark\":\"-1\"}\"'
+
+// @Manuel: ? set internally by config ?
+/param='"approved": 1'	
+// public:1, guest:5, registered:2, special:3, super user:6
+/param='"access": 1'  	
+// no:0, yes:1		
+/param='"published": 1'	
+	// /param='"featured": 1'	// no:0, yes:1		
+/param='"author": "Thomas API"'
