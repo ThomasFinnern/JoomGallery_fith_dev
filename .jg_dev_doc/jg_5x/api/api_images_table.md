@@ -12,7 +12,7 @@ Attention: Changing the alias of an image will lead to move the image file which
 Attention: Deleting an image does delete the table item but not the images 'behind' (original, display, thumb, ...) 
 
 <details>
- <summary><code>GET v1/joomgallery/images</code> <code><b>/</b></code> <code>(gets 'images' number and 'creationDate' from manifest data of JG component)</code></summary>
+ <summary><code>GET v1/joomgallery/images</code> <code><b>/</b></code> <code>(gets list of all images)</code></summary>
 
 ##### Parameters
 

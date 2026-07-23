@@ -8,7 +8,7 @@ The data integrity between category and image must be ensured by the data from t
 Attention: Category ID '0' and '1' are invalid as they are needed fo the binary tree
 
 <details>
- <summary><code>GET v1/joomgallery/categories</code> <code><b>/</b></code> <code>(gets 'categories' number and 'creationDate' from manifest data of JG component)</code></summary>
+ <summary><code>GET v1/joomgallery/categories</code> <code><b>/</b></code> <code>(gets list of all categories)</code></summary>
 
 ##### Parameters
 
