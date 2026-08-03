@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_upload_patch_id.bat
+REM jg_getImage_12.bat
 REM
 CLS
 
@@ -21,18 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-SET IMAGE_ID=""
-IF NOT A%1==A (
-	SET IMAGE_ID=-a "/urlRouterParam=%1"   
-	ECHO IMAGE_ID=%IMAGE_ID%     
-)
-
-
-ECHO ----------------------------------------------
-ECHO.
-
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_id.tsk %IMAGE_ID%
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_id.tsk %IMAGE_ID%
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_12.tsk %1
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_12.tsk %1
 
 GOTO :EOF
 

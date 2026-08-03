@@ -9,7 +9,7 @@ task:post
 /isCreateAutoResponseFile=true
 	// /param='"path": "sampledata/next_dir/test.jpg"'
 /dataFile="d:\FithBilderRsgallery\Coffee.small\2016-09-22_00010.jpg"
-/param='"catid": 3'
+/param='"catid": 4'
 
 	// /param='"uploader": "API"'
 /param='"description": "<p>Brown macchiato glas with nice figure in cream (3.B)</p>"'

@@ -1,7 +1,9 @@
 @ECHO OFF
-REM jg_upload_patch_jpatch_5_04_img_2.bat
+REM jg_getImage_%1.bat
 REM
 CLS
+
+setlocal EnableDelayedExpansion
 
 REM Path for calling
 set ExePath=e:\wamp64\bin\php\php8.4.5\
@@ -31,8 +33,8 @@ IF NOT A%1==A (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_jpatch_5_04_img_2.tsk %IMAGE_ID%
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_jpatch_5_04_img_2.tsk %IMAGE_ID%
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_%%1.tsk %IMAGE_ID%
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_getImage_%%1.tsk %IMAGE_ID%
 
 GOTO :EOF
 

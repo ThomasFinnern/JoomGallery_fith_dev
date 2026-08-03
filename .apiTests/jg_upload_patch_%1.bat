@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_patch_upload_02_img_file_id.bat
+REM jg_upload_patch_%1.bat
 REM
 CLS
 
@@ -31,8 +31,8 @@ IF NOT A%1==A (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_patch_upload_02_img_file_id.tsk %IMAGE_ID%
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_patch_upload_02_img_file_id.tsk %IMAGE_ID%
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_%%1.tsk %IMAGE_ID%
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_%%1.tsk %IMAGE_ID%
 
 GOTO :EOF
 
