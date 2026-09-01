@@ -14,7 +14,7 @@ task:patch
 /isCreateAutoResponseFile=true
     // /paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_postCategory_DataBare.json"
 	// /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_patchCategory_created_by.json"
-/param='"published": 1'
+/param='"published": 0'
 
     //=== Ideas ========================
 

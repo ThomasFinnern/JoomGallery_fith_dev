@@ -15,7 +15,7 @@ task:post
     // /paramsFile="d:\Entwickl\2026\_gitHub\apiByCurlHtml\src\curl_tsk_files\jg_postCategory_DataBare.json"
 	// /paramsFile="d:\Entwickl\2026\_gitHub\JoomGallery_fith_dev\.apiTests\dataFiles\jg_postCategory_API_05.json"
 /param='"parent_id": 1'
-/param='"title": "API Base"'
+/param='"title": "API Base next"'
 /param='"modified_time": "2026-03-31 10:53:41"'
 
 
