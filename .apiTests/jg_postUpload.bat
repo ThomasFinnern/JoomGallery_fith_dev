@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_upload_post_6x.bat
+REM jg_postUpload.bat
 REM
 CLS
 
@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_post_6x.tsk %1
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_post_6x.tsk %1
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_postUpload.tsk %1
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_postUpload.tsk %1
 
 GOTO :EOF
 

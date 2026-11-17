@@ -17,6 +17,7 @@ task:post
 /param='"parent_id": 1'
 /param='"title": "API Base next"'
 /param='"modified_time": "2026-03-31 10:53:41"'
+/param='"published": 1'
 
 
     //=== Ideas ========================

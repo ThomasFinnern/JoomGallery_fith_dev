@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_upload_post_jpatch_5_04.bat
+REM j!_getApiOverview.bat
 REM
 CLS
 
@@ -21,8 +21,8 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_post_jpatch_5_04.tsk %1
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_post_jpatch_5_04.tsk %1
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_getApiOverview.tsk %1
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\j!_getApiOverview.tsk %1
 
 GOTO :EOF
 

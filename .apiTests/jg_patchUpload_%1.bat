@@ -1,5 +1,5 @@
 @ECHO OFF
-REM jg_upload_patch_24.bat
+REM jg_patchUpload_%1.bat
 REM
 CLS
 
@@ -21,12 +21,23 @@ if exist "%ExePath%php.exe" (
 ECHO ----------------------------------------------
 ECHO.
 
-echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_24.tsk %1
-"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_24.tsk %1
+SET IMAGE_ID=""
+IF NOT A%1==A (
+	SET IMAGE_ID=-a "/urlRouterParam=%1"   
+	ECHO IMAGE_ID=%IMAGE_ID%     
+)
+
+
+ECHO ----------------------------------------------
+ECHO.
+
+echo --- "%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_%%1.tsk %IMAGE_ID%
+"%ExePath%php.exe" ..\..\apiByCurlHtml\src\curlApiTasksCmd.php -f .\jg_upload_patch_%%1.tsk %IMAGE_ID%
 
 GOTO :EOF
 
 REM ------------------------------------------
+REM Adds given argument to the already known command arguments
 REM Adds given argument to the already known command arguments
 :AddNextArg
     Set NextArg=%*
